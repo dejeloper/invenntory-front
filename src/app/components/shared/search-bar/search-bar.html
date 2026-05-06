@@ -1,0 +1,16 @@
+<div class="flex items-center bg-gray-200/50 rounded-xl px-3 py-2">
+  <span class="text-lg text-gray-400 mr-2" aria-hidden="true">🔍</span>
+  <input
+    type="search"
+    [value]="value()"
+    (input)="valueChange.emit($any($event.target).value)"
+    (keydown.enter)="search.emit()"
+    [placeholder]="placeholder()"
+    class="flex-1 bg-transparent text-base outline-none" />
+  @if (value()) {
+    <button
+      (click)="valueChange.emit('')"
+      aria-label="Limpiar búsqueda"
+      class="text-gray-400 text-lg">✕</button>
+  }
+</div>

@@ -1,32 +1,20 @@
-import {Component, signal, computed} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {Component, signal, computed, ChangeDetectionStrategy} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {getTimeSince, formatCurrencyCOP, formatDate} from '@services/time.utils';
-import {getUnidades} from '@services/unidades';
-
-interface Product {
-  id: string;
-  name: string;
-  lastPurchase: {store: string; price: number; date: string} | null;
-  inStock: boolean;
-  quantity: number;
-  unidad: string;
-  toBuy: boolean;
-  buyQuantity: number;
-  buyUnidad: string;
-}
+import {Product} from '@interfaces/product';
+import {formatCurrencyCOP} from '@services/time.utils';
+import {SearchBar} from '@components/shared/search-bar/search-bar';
+import {ModalSheet} from '@components/shared/modal-sheet/modal-sheet';
+import {ProductCard} from '@components/shared/product-card/product-card';
+import {UpdateProductModal} from './update-product-modal/update-product-modal';
 
 @Component({
   selector: 'market',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [FormsModule, SearchBar, ModalSheet, ProductCard, UpdateProductModal],
   templateUrl: './market.html',
 })
 export class Market {
-  getTimeSince = getTimeSince;
   formatCurrency = formatCurrencyCOP;
-  formatDate = formatDate;
-  unidades = getUnidades();
 
   products = signal<Product[]>([
     {id: '1', name: 'Leche', lastPurchase: {store: 'Éxito', price: 4500, date: '2026-04'}, inStock: true, quantity: 6, unidad: 'Unidad', toBuy: false, buyQuantity: 1, buyUnidad: 'Unidad'},
@@ -62,19 +50,13 @@ export class Market {
   ]);
 
   searchQuery = signal('');
+  showOnlyToBuy = signal(false);
 
   showAddModal = signal(false);
   newProductName = signal('');
 
-  showOnlyToBuy = signal(false);
   showUpdateModal = signal(false);
   selectedProduct = signal<Product | null>(null);
-  updateInStock = signal(true);
-  updateQuantity = signal(1);
-  updateUnidad = signal('Unidad');
-  updateToBuy = signal(false);
-  updateBuyQuantity = signal(1);
-  updateBuyUnidad = signal('Unidad');
 
   filteredProducts = computed(() => {
     let products = this.products();
@@ -97,28 +79,26 @@ export class Market {
     this.products().filter(p => p.toBuy).reduce((sum, p) => sum + (p.lastPurchase?.price || 0), 0)
   );
 
-  search() {
+  search(): void {
     const query = this.searchQuery().trim().toLowerCase();
     if (!query) return;
 
     const exists = this.products().find(p => p.name.toLowerCase().includes(query));
 
     if (exists) {
-      this.selectedProduct.set(exists);
-      this.updateInStock.set(exists.inStock);
-      this.updateQuantity.set(exists.quantity || 1);
-      this.updateUnidad.set(exists.unidad);
-      this.updateToBuy.set(exists.toBuy);
-      this.updateBuyQuantity.set(exists.buyQuantity || 1);
-      this.updateBuyUnidad.set(exists.buyUnidad || 'Unidad');
-      this.showUpdateModal.set(true);
+      this.openEditModal(exists);
     } else {
       this.newProductName.set(this.searchQuery().trim());
       this.showAddModal.set(true);
     }
   }
 
-  addProduct() {
+  openEditModal(product: Product): void {
+    this.selectedProduct.set(product);
+    this.showUpdateModal.set(true);
+  }
+
+  addProduct(): void {
     const name = this.newProductName().trim();
     if (!name) return;
 
@@ -131,38 +111,26 @@ export class Market {
       unidad: 'Unidad',
       toBuy: false,
       buyQuantity: 1,
-      buyUnidad: 'Unidad'
+      buyUnidad: 'Unidad',
     }]);
 
     this.closeModals();
     this.searchQuery.set('');
   }
 
-  updateProduct() {
-    const product = this.selectedProduct();
-    if (!product) return;
-
+  onProductSave(updated: Product): void {
     this.products.update(items =>
-      items.map(p => p.id === product.id ? {
-        ...p,
-        inStock: this.updateInStock(),
-        quantity: this.updateQuantity(),
-        unidad: this.updateUnidad(),
-        toBuy: this.updateToBuy(),
-        buyQuantity: this.updateBuyQuantity(),
-        buyUnidad: this.updateBuyUnidad()
-      } : p)
+      items.map(p => p.id === updated.id ? updated : p)
     );
-
     this.closeModals();
     this.searchQuery.set('');
   }
 
-  deleteProduct(id: string) {
+  deleteProduct(id: string): void {
     this.products.update(items => items.filter(p => p.id !== id));
   }
 
-  closeModals() {
+  closeModals(): void {
     this.showAddModal.set(false);
     this.showUpdateModal.set(false);
     this.newProductName.set('');

@@ -1,0 +1,15 @@
+<div class="flex items-center justify-between">
+  <span class="text-sm font-medium">{{ label() }}</span>
+  <button
+    role="switch"
+    [attr.aria-checked]="value()"
+    [attr.aria-label]="label()"
+    (click)="valueChange.emit(!value())"
+    class="w-12 h-7 rounded-full relative transition-colors"
+    [class]="value() ? activeColor() : offColor()">
+    <span
+      class="absolute top-1 w-5 h-5 bg-white rounded-full shadow-sm transition-all"
+      [class]="value() ? 'left-6' : 'left-1'">
+    </span>
+  </button>
+</div>

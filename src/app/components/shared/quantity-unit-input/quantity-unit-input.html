@@ -1,0 +1,19 @@
+<div>
+  <label class="text-sm text-medium-gray">{{ label() }}</label>
+  <div class="flex gap-2 mt-1">
+    <input
+      type="number"
+      [value]="quantity()"
+      [min]="min()"
+      (input)="onQuantityInput($event)"
+      class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base bg-white" />
+    <select
+      [value]="unit()"
+      (change)="onUnitChange($event)"
+      class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base bg-white">
+      @for (u of units(); track u) {
+        <option [value]="u">{{ u }}</option>
+      }
+    </select>
+  </div>
+</div>

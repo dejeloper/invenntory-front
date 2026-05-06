@@ -1,0 +1,35 @@
+<div class="bg-pure-white rounded-xl border border-border-silver p-4">
+  <div class="flex justify-between items-start">
+    <div>
+      <p class="text-base font-medium">{{ product().name }}</p>
+      <p class="text-xs text-medium-gray">
+        @if (product().lastPurchase) {
+          <span class="text-green-600">
+            {{ product().lastPurchase!.store }}: {{ formatCurrency(product().lastPurchase!.price) }}
+          </span>
+          <span class="text-gray-400"> ({{ getTimeSince(product().lastPurchase!.date) }})</span>
+        } @else {
+          Sin precio anterior
+        }
+      </p>
+      <p class="text-xs mt-1">
+        @if (product().inStock) {
+          <span class="text-green-600">✓ Hay ({{ product().quantity }} {{ product().unidad }})</span>
+        } @else {
+          <span class="text-gray-400">○ No hay</span>
+        }
+      </p>
+    </div>
+    <div class="flex flex-col items-end gap-2">
+      @if (product().toBuy) {
+        <span class="text-xs bg-gray-100 text-medium-gray px-2 py-1 rounded-full">Por comprar</span>
+      }
+      <button
+        (click)="edit.emit(product())"
+        [attr.aria-label]="'Editar ' + product().name"
+        class="w-8 h-8 flex items-center justify-center rounded-full text-medium-gray active:bg-gray-100 active:scale-95 transition-transform text-base">
+        ✏️
+      </button>
+    </div>
+  </div>
+</div>
