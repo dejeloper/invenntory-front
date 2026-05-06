@@ -1,5 +1,5 @@
 {
-	"outputDirectory": "dist/invenntory",
+	"outputDirectory": "dist/invenntory/browser",
 	"routes": [
 		{
 			"handle": "filesystem"
