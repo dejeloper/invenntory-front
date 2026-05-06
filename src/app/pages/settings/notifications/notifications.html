@@ -1,8 +1,8 @@
 <div class="bg-pure-white rounded overflow-hidden border border-border-silver overflow-y-auto max-h-48">
   @for (notif of getNotifications(); track notif.id) {
     <div class="flex items-start gap-4 px-4 py-1 border-b border-border-silver last:border-b-0"
-      [class.bg-interactive-blue/5]="!notif.read">
-      <div class="w-2 h-2 mt-2 rounded-full bg-interactive-blue" [class.opacity-0]="notif.read"></div>
+      [class.bg-gray-50]="!notif.read">
+      <div class="w-2 h-2 mt-2 rounded-full bg-gray-800" [class.opacity-0]="notif.read"></div>
       <div class="flex-1">
         <p class="text-base font-medium">{{ notif.title }}</p>
         <p class="text-xs text-medium-gray">{{ notif.message }}</p>
