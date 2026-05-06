@@ -6,11 +6,11 @@
 			aria-label="Mercado">
 			<span class="text-xl" aria-hidden="true">🛒</span>
 			Mercado
-			@if (notifications.getMarketBadge() > 0) {
+			@if (notifications.notificationsMenuMarketCount > 0) {
 			<span
 				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
-				aria-label="{{ notifications.getMarketBadge() }} notificaciones en Mercado">
-				{{ notifications.getMarketBadge() }}
+				aria-label="{{ notifications.notificationsMenuMarketCount }} notificaciones en Mercado">
+				{{ notifications.notificationsMenuMarketCount }}
 			</span>
 			}
 		</a>
@@ -20,6 +20,13 @@
 			aria-label="Presupuesto">
 			<span class="text-xl" aria-hidden="true">💰</span>
 			Presupuesto
+			@if (notifications.notificationsMenuBudgetCount > 0) {
+			<span
+				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
+				aria-label="{{ notifications.notificationsMenuBudgetCount }} notificaciones en Presupuesto">
+				{{ notifications.notificationsMenuBudgetCount }}
+			</span>
+			}
 		</a>
 
 		<a routerLink="/settings" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
@@ -27,11 +34,11 @@
 			aria-label="Settings">
 			<span class="text-xl" aria-hidden="true">⚙️</span>
 			Settings
-			@if (notifications.getSettingsBadge() > 0) {
+			@if (notifications.notificationsMenuSettingsCount > 0) {
 			<span
 				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
-				aria-label="{{ notifications.getSettingsBadge() }} notificaciones en Settings">
-				{{ notifications.getSettingsBadge() }}
+				aria-label="{{ notifications.notificationsMenuSettingsCount }} notificaciones en Settings">
+				{{ notifications.notificationsMenuSettingsCount }}
 			</span>
 			}
 		</a>
