@@ -8,11 +8,9 @@
     <input type="checkbox" [(ngModel)]="showOnlyToBuy" class="w-5 h-5 rounded accent-gray-800" />
     <span class="text-base text-medium-gray">Por comprar</span>
     <div class="py-4 rounded-xl gap-2 flex items-center ml-auto">
-      @if (estimatedTotal() > 0) {
+      @if (totalBuyQuantity() > 0) {
       <span class="text-caption text-medium-gray">Estimado:</span>
       <span class="text-sm font-semibold">{{ formatCurrency(estimatedTotal()) }}</span>
-      }
-      @if (toBuyCount() > 0) {
       <span class="ml-auto bg-gray-800 text-pure-white text-xs px-2 py-1 rounded-full">{{ toBuyCount() }}</span>
       }
     </div>

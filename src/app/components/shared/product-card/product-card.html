@@ -1,33 +1,47 @@
-<div class="bg-pure-white rounded-xl border border-border-silver p-4">
-  <div class="flex justify-between items-center">
-    <div>
+<button (click)="edit.emit(product())" [attr.aria-label]="'Editar ' + product().name"
+  class="w-full text-left bg-pure-white rounded-xl border border-border-silver p-4 active:bg-gray-50 active:scale-95 transition-transform">
+  <div class="flex justify-between items-start">
+    <div class="flex-1 min-w-0">
       <p class="text-base font-medium">{{ product().name }}</p>
-      <p class="text-xs text-medium-gray">
-        @if (product().lastPurchase) {
-        <span class="text-green-600">
-          {{ product().lastPurchase!.store }}: {{ formatCurrency(product().lastPurchase!.price) }}
-        </span>
-        <span class="text-gray-400"> ({{ getTimeSince(product().lastPurchase!.date) }})</span>
-        } @else {
-        Sin precio anterior
-        }
-      </p>
-      <p class="text-xs mt-1">
-        @if (product().inStock) {
-        <span class="text-green-600">✓ Hay ({{ product().quantity }} {{ product().unidad }})</span>
-        } @else {
-        <span class="text-gray-400">○ No hay</span>
-        }
-      </p>
-    </div>
-    <div class="flex flex-col justify-center items-end gap-2">
+
       @if (product().toBuy) {
-      <span class="text-xs bg-gray-100 text-medium-gray px-2 py-1 rounded-full">Por comprar</span>
+      <div class="flex items-center gap-3 mt-1">
+        <span class="text-xs text-red-500">Queda: {{ product().quantity }} {{ product().unidad }}</span>
+        <span class="text-xs text-green-600">Comprar: {{ product().buyQuantity }} {{ product().buyUnidad }}</span>
+      </div>
+      <p class="text-xs mt-1">
+        @if (product().lastPurchase) {
+        <span class="text-gray-800 font-medium">{{ formatCurrency(product().lastPurchase!.price) }}</span>
+        <span class="text-gray-800 font-medium"> · {{ product().lastPurchase!.store }}</span>
+        <span class="text-gray-400"> · {{ getTimeSince(product().lastPurchase!.date) }}</span>
+        } @else {
+        <span class="text-gray-400">Sin precio anterior</span>
+        }
+      </p>
+      } @else {
+      @if (product().inStock) {
+      <div class="flex items-center gap-2 mt-1">
+        <span class="text-xs text-green-700">{{ product().quantity }} {{ product().unidad }}</span>
+        @if (product().stockUpdatedAt) {
+        <span class="text-xs text-gray-400">· act. {{ getTimeSince(product().stockUpdatedAt!) }}</span>
+        }
+      </div>
       }
-      <button (click)="edit.emit(product())" [attr.aria-label]="'Editar ' + product().name"
-        class="w-8 h-8 flex items-center justify-center rounded-full text-medium-gray active:bg-gray-100 active:scale-95 transition-transform text-base">
-        ✏️
-      </button>
+      <p class="text-xs mt-1">
+        @if (product().lastPurchase) {
+        <span class="text-gray-800 font-medium">{{ formatCurrency(product().lastPurchase!.price) }}</span>
+        <span class="text-gray-800 font-medium"> · {{ product().lastPurchase!.store }}</span>
+        <span class="text-gray-400"> · {{ getTimeSince(product().lastPurchase!.date) }}</span>
+        } @else {
+        <span class="text-gray-400">Sin precio anterior</span>
+        }
+      </p>
+      }
     </div>
+    @if (product().toBuy) {
+    <span class="text-xs bg-gray-100 text-medium-gray px-2 py-1 rounded-full ml-3 shrink-0">Por comprar</span>
+    } @else if (product().inStock && product().stockUpdatedAt && product().quantity > 0) {
+    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full ml-3 shrink-0">Stock Disponible</span>
+    }
   </div>
-</div>
+</button>

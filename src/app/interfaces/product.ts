@@ -8,4 +8,5 @@ export interface Product {
   toBuy: boolean;
   buyQuantity: number;
   buyUnidad: string;
+  stockUpdatedAt: string | null;
 }

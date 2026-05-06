@@ -43,14 +43,18 @@ export class UpdateProductModal {
   }
 
   onSave(): void {
+    const updatedInStock = this.inStock();
+    const prevProduct = this.product();
+    const stockChanged = updatedInStock !== prevProduct.inStock || this.quantity() !== prevProduct.quantity;
     this.save.emit({
-      ...this.product(),
-      inStock: this.inStock(),
+      ...prevProduct,
+      inStock: updatedInStock,
       quantity: this.quantity(),
       unidad: this.unidad(),
       toBuy: this.toBuy(),
       buyQuantity: this.buyQuantity(),
       buyUnidad: this.buyUnidad(),
+      stockUpdatedAt: stockChanged && updatedInStock ? new Date().toISOString().slice(0, 10) : prevProduct.stockUpdatedAt,
     });
   }
 }
