@@ -19,31 +19,40 @@
   </div>
 </div>
 
-<div class="space-y-2">
-  @for (product of paginatedProducts(); track product.id) {
-  <product-card [product]="product" (edit)="openEditModal($event)" />
-  } @empty {
-  <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
-  }
-</div>
+<section class="max-h-[calc(100dvh-22rem)] overflow-y-auto pr-1 pb-0">
+  <div class="space-y-2">
+    @for (product of paginatedProducts(); track product.id) {
+    <product-card [product]="product" (edit)="openEditModal($event)" />
+    } @empty {
+    <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
+    }
+  </div>
+</section>
 
 @if (totalPages() > 1) {
-<nav class="flex items-center justify-center gap-3 py-4" aria-label="Paginación">
-  <button (click)="prevPage()" [attr.aria-disabled]="currentPage() === 1" [class.opacity-40]="currentPage() === 1"
+<nav class="flex items-center justify-center gap-4 mt-1 mb-0 backdrop-blur-sm" aria-label="Paginación">
+
+  <button (click)="prevPage()" [class.opacity-40]="currentPage() === 1"
     [class.pointer-events-none]="currentPage() === 1"
-    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 text-medium-gray active:scale-95 transition-transform"
+    class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 active:bg-gray-50 transition-all"
     aria-label="Página anterior">
-    ‹
+    ←
   </button>
-  <span class="text-sm text-medium-gray" aria-live="polite" aria-atomic="true">
-    {{ currentPage() }} / {{ totalPages() }}
+
+  <span class="text-sm tabular-nums px-1" aria-live="polite" aria-atomic="true"
+    [attr.aria-label]="'Página ' + currentPage() + ' de ' + totalPages()">
+    <span class="font-semibold text-midnight-graphite">{{ currentPage() }}</span>
+    <span class="text-medium-gray mx-1">/</span>
+    <span class="text-medium-gray">{{ totalPages() }}</span>
   </span>
-  <button (click)="nextPage()" [attr.aria-disabled]="currentPage() === totalPages()"
-    [class.opacity-40]="currentPage() === totalPages()" [class.pointer-events-none]="currentPage() === totalPages()"
-    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 text-medium-gray active:scale-95 transition-transform"
+
+  <button (click)="nextPage()" [class.opacity-40]="currentPage() === totalPages()"
+    [class.pointer-events-none]="currentPage() === totalPages()"
+    class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 active:bg-gray-50 transition-all"
     aria-label="Página siguiente">
-    ›
+    →
   </button>
+
 </nav>
 }
 
