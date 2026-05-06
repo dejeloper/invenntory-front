@@ -1,7 +1,7 @@
 <div class="md:w-screen md:-ml-[calc(50vw-50%)] md:flex md:h-[calc(100dvh-3rem)] md:overflow-hidden">
   <aside
-    class="hidden md:flex md:flex-col md:w-72 md:shrink-0 md:border-r md:border-border-silver md:bg-pure-white md:px-5 md:py-6 md:gap-5">
-    <h2 class="text-xl font-semibold text-midnight-graphite">🛒 Mercado</h2>
+    class="hidden md:flex md:flex-col md:justify-between md:w-72 md:shrink-0 md:border-r md:border-border-silver md:bg-pure-white md:px-5 md:py-6 md:gap-5 md:sticky md:top-0 md:h-[calc(100dvh-9rem)]">
+    <h2 class="text-xl font-semibold text-midnight-graphite md:block hidden">🛒 Mercado</h2>
 
     <search-bar [value]="searchQuery()" (valueChange)="searchQuery.set($event)" (search)="search()"
       placeholder="Buscar producto..." />
@@ -47,7 +47,8 @@
     </div>
     }
   </aside>
-  <div class="flex flex-col flex-1 md:overflow-hidden">
+  <div class="flex flex-col flex-1">
+    <h2 class="md:hidden block text-xl font-semibold text-midnight-graphite mb-4">🛒 Mercado</h2>
     <div class="md:hidden sticky -top-4 left-0 right-0 z-20 bg-white w-screen -ml-[calc(50vw-50%)] mb-4">
       <div class="px-4 py-3">
         <search-bar class="mb-3" [value]="searchQuery()" (valueChange)="searchQuery.set($event)" (search)="search()"
@@ -65,44 +66,48 @@
         </label>
       </div>
     </div>
-    <h2 class="md:hidden text-xl font-semibold text-midnight-graphite mb-4">🛒 Mercado</h2>
-    <div
-      class="hidden md:flex items-center justify-between px-6 py-4 border-b border-border-silver bg-pure-white shrink-0">
-      <p class="text-sm text-medium-gray">
-        <span class="font-semibold text-midnight-graphite">{{ filteredProducts().length }}</span> productos
-      </p>
-    </div>
-    <section class="flex-1 overflow-y-auto px-0 md:px-6 md:py-4 max-h-[calc(100dvh-22rem)] md:max-h-none">
-      <div class="space-y-2 md:space-y-0 md:grid md:grid-cols-2 md:gap-3">
-        @for (product of paginatedProducts(); track product.id) {
-        <product-card [product]="product" (edit)="openEditModal($event)" />
-        } @empty {
-        <p class="text-sm text-medium-gray text-center py-8 md:col-span-2">No hay productos. Busca para agregar uno.</p>
-        }
+    <div class="md:h-[calc(100dvh-9rem)] ">
+      <div
+        class="hidden md:flex items-center justify-between px-6 py-4 border-b border-border-silver bg-pure-white shrink-0">
+        <p class="text-sm text-medium-gray">
+          <span class="font-semibold text-midnight-graphite">{{ filteredProducts().length }}</span> productos
+        </p>
       </div>
-    </section>
-    @if (totalPages() > 1) {
-    <nav class="md:hidden flex items-center justify-center gap-4 mt-3 mb-2" aria-label="Paginación">
-      <button (click)="prevPage()" [class.opacity-40]="currentPage() === 1"
-        [class.pointer-events-none]="currentPage() === 1"
-        class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 transition-all"
-        aria-label="Página anterior">
-        ←
-      </button>
-      <span class="text-sm tabular-nums px-1" aria-live="polite" aria-atomic="true"
-        [attr.aria-label]="'Página ' + currentPage() + ' de ' + totalPages()">
-        <span class="font-semibold text-midnight-graphite">{{ currentPage() }}</span>
-        <span class="text-medium-gray mx-1">/</span>
-        <span class="text-medium-gray">{{ totalPages() }}</span>
-      </span>
-      <button (click)="nextPage()" [class.opacity-40]="currentPage() === totalPages()"
-        [class.pointer-events-none]="currentPage() === totalPages()"
-        class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 transition-all"
-        aria-label="Página siguiente">
-        →
-      </button>
-    </nav>
-    }
+      <section
+        class=" px-0 md:px-6 md:py-4 max-h-[calc(100dvh-20rem)] overflow-y-auto md:max-h-none md:overflow-visible">
+        <div class="space-y-2 md:space-y-0 md:grid md:grid-cols-2 md:gap-3">
+          @for (product of paginatedProducts(); track product.id) {
+          <product-card [product]="product" (edit)="openEditModal($event)" />
+          } @empty {
+          <p class="text-sm text-medium-gray text-center py-8 md:col-span-2">No hay productos. Busca para agregar uno.
+          </p>
+          }
+        </div>
+      </section>
+      @if (totalPages() > 1) {
+      <nav class="md:hidden flex items-center justify-center gap-4 mt-3 mb-2" aria-label="Paginación">
+        <button (click)="prevPage()" [class.opacity-40]="currentPage() === 1"
+          [class.pointer-events-none]="currentPage() === 1"
+          class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 transition-all"
+          aria-label="Página anterior">
+          ←
+        </button>
+        <span class="text-sm tabular-nums px-1" aria-live="polite" aria-atomic="true"
+          [attr.aria-label]="'Página ' + currentPage() + ' de ' + totalPages()">
+          <span class="font-semibold text-midnight-graphite">{{ currentPage() }}</span>
+          <span class="text-medium-gray mx-1">/</span>
+          <span class="text-medium-gray">{{ totalPages() }}</span>
+        </span>
+        <button (click)="nextPage()" [class.opacity-40]="currentPage() === totalPages()"
+          [class.pointer-events-none]="currentPage() === totalPages()"
+          class="flex items-center gap-1.5 px-4 h-9 rounded-xl border border-gray-200 bg-white text-sm font-medium text-midnight-graphite shadow-sm active:scale-95 transition-all"
+          aria-label="Página siguiente">
+          →
+        </button>
+      </nav>
+      }
+
+    </div>
   </div>
 </div>
 
