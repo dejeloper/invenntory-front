@@ -2,13 +2,10 @@
 
 <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
   @for (item of items; track item.name; let last = $last) {
-    <div 
-      class="flex justify-between px-4 py-3"
-      [class]="!last ? 'border-b border-border-silver' : ''"
-    >
-      <span>{{ item.name }}</span>
-      <span>{{ item.price }}</span>
-    </div>
+  <div class="flex justify-between px-4 py-3" [class]="!last ? 'border-b border-border-silver' : ''">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price }}</span>
+  </div>
   }
 </div>
 
