@@ -1,29 +1,30 @@
 import { Injectable, inject } from '@angular/core';
 import { signal } from '@angular/core';
 import { MockApiService } from './mock-api.service';
-import { INotificationGeneral, INotificationItem } from '../interfaces/notifications';
+import { INotificationGeneral, INotificationItem, INotificationSetting } from '../interfaces/notifications';
 
 @Injectable({ providedIn: 'root' })
 export class NotificationsService {
   private mockApi = inject(MockApiService);
 
-  notificationsGeneral = signal<INotificationGeneral[]>([]);
   notificationsMenuMarket = signal<INotificationItem[]>([]);
   notificationsMenuBudget = signal<INotificationItem[]>([]);
+  notificationsMenuSettings = signal<INotificationSetting[]>([]);
 
   initialize() {
-    this.mockApi.get<{ notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsGeneral: INotificationGeneral[] }>('getNotificationsMenu')
+    this.mockApi.get<{ notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsMenuSettings: INotificationSetting[] }>('getNotificationsMenu')
       .subscribe(response => {
         if (response.success && response.data) {
-          this.notificationsGeneral.set(response.data.notificationsGeneral);
           this.notificationsMenuMarket.set(response.data.notificationsMenuMarket);
           this.notificationsMenuBudget.set(response.data.notificationsMenuBudget);
+          this.notificationsMenuSettings.set(response.data.notificationsMenuSettings);
         }
       });
   }
 
   get notificationsGeneralCount(): number {
-    return this.notificationsGeneral().filter(n => !n.read).length;
+    const notifSetting = this.notificationsMenuSettings().find(s => s.name === 'Notificaciones');
+    return notifSetting?.notificaciones?.filter(n => !n.read).length ?? 0;
   }
 
   get notificationsMenuMarketCount(): number {
@@ -35,6 +36,15 @@ export class NotificationsService {
   }
 
   get notificationsMenuSettingsCount(): number {
-    return this.notificationsGeneralCount;
+    let total = 0;
+    const settings = this.notificationsMenuSettings();
+    for (const setting of settings) {
+      if (setting.name === 'Notificaciones') {
+        total += setting.notificaciones?.filter(n => !n.read).length ?? 0;
+      } else {
+        total += setting.number;
+      }
+    }
+    return total;
   }
 }

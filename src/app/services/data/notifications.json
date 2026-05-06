@@ -27,34 +27,79 @@
       "number": 1
     }
   ],
-  "notificationsGeneral": [
+  "notificationsMenuSettings": [
     {
-      "id": 1,
-      "title": "Recordatorio de compra",
-      "message": "No olvides comprar leche",
-      "time": "2 min",
-      "read": false
+      "name": "Notificaciones",
+      "notificaciones": [
+        {
+          "id": 1,
+          "title": "Recordatorio de compra",
+          "message": "No olvides comprar leche",
+          "time": "2 min",
+          "read": true
+        },
+        {
+          "id": 2,
+          "title": "Alerta de presupuesto",
+          "message": "Te quedan $50.000 disponibles",
+          "time": "1 hora",
+          "read": true
+        },
+        {
+          "id": 3,
+          "title": "Bienvenido",
+          "message": "Gracias por usar Invenntory",
+          "time": "Ayer",
+          "read": true
+        },
+        {
+          "id": 4,
+          "title": "Actualización disponible",
+          "message": "Nueva versión lista",
+          "time": "Ayer",
+          "read": true
+        },
+        {
+          "id": 5,
+          "title": "Oferta exclusiva",
+          "message": "10% de descuento en tu próxima compra",
+          "time": "Hace 2 días",
+          "read": false
+        },
+        {
+          "id": 6,
+          "title": "Recordatorio de pago",
+          "message": "Tu factura vence mañana",
+          "time": "Hace 3 días",
+          "read": true
+        },
+        {
+          "id": 7,
+          "title": "Alerta de seguridad",
+          "message": "Nuevo inicio de sesión detectado",
+          "time": "Hace 4 días",
+          "read": false
+        },
+        {
+          "id": 8,
+          "title": "Notificación de envío",
+          "message": "Tu pedido ha sido enviado",
+          "time": "Hace 5 días",
+          "read": true
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "Alerta de presupuesto",
-      "message": "Te quedan $50.000 disponibles",
-      "time": "1 hora",
-      "read": false
+      "name": "Privacidad",
+      "number": 1
     },
     {
-      "id": 3,
-      "title": "Bienvenido",
-      "message": "Gracias por usar Invenntory",
-      "time": "Ayer",
-      "read": true
+      "name": "Apariencia",
+      "number": 1
     },
     {
-      "id": 4,
-      "title": "Actualización disponible",
-      "message": "Nueva versión lista",
-      "time": "Ayer",
-      "read": true
+      "name": "Acerca de",
+      "number": 0
     }
   ]
 }

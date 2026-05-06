@@ -1,12 +1,6 @@
-import {Component, signal} from '@angular/core';
-
-interface Notification {
-  id: number;
-  title: string;
-  message: string;
-  time: string;
-  read: boolean;
-}
+import {Component, inject, OnInit} from '@angular/core';
+import {NotificationsService} from '../../../services/notifications.service';
+import {INotificationGeneral} from '../../../interfaces/notifications';
 
 @Component({
   selector: 'notifications-settings',
@@ -14,10 +8,11 @@ interface Notification {
   templateUrl: './notifications.html',
 })
 export class NotificationsSettings {
-  notifications = signal<Notification[]>([
-    {id: 1, title: 'Recordatorio de compra', message: 'No olvides comprar leche', time: '2 min', read: false},
-    {id: 2, title: 'Alerta de presupuesto', message: 'Te quedan $50.000 disponibles', time: '1 hora', read: false},
-    {id: 3, title: 'Bienvenido', message: 'Gracias por usar Invenntory', time: 'Ayer', read: true},
-    {id: 4, title: 'Actualización disponible', message: 'Nueva versión lista', time: 'Ayer', read: true},
-  ]);
+  private notificationsService = inject(NotificationsService);
+
+  getNotifications() {
+    const setting = this.notificationsService.notificationsMenuSettings()
+      .find(s => s.name === 'Notificaciones');
+    return setting?.notificaciones ?? [];
+  }
 }

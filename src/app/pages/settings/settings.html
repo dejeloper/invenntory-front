@@ -9,11 +9,7 @@
         <span class="text-base font-medium">{{ getLabel(item.id) }}</span>
       </div>
       <div class="flex items-center gap-3">
-        @if (notifications.getSectionBadge(item.id) > 0) {
-        <span class="w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
-          {{ notifications.getSectionBadge(item.id) }}
-        </span>
-        }
+        <badge-notification [count]="getNotificationBadge(item.id)" [inline]="true" />
         <span class="text-medium-gray text-lg transition-transform" [class.rotate-90]="expanded() === item.id">›</span>
       </div>
     </button>

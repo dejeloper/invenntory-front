@@ -1,18 +1,24 @@
 export interface INotificationItem {
-	name: string;
-	number: number;
+  name: string;
+  number: number;
+}
+
+export interface INotificationSetting {
+  name: string;
+  number: number;
+  notificaciones?: INotificationGeneral[];
 }
 
 export interface INotificationsMenu {
-	notificationsMenuMarket: INotificationItem[];
-	notificationsMenuBudget: INotificationItem[];
-	notificationsGeneral: INotificationGeneral[];
+  notificationsMenuMarket: INotificationItem[];
+  notificationsMenuBudget: INotificationItem[];
+  notificationsMenuSettings: INotificationSetting[];
 }
 
 export interface INotificationGeneral {
-	id: number;
-	title: string;
-	message: string;
-	time: string;
-	read: boolean;
+  id: number;
+  title: string;
+  message: string;
+  time: string;
+  read: boolean;
 }

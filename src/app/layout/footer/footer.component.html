@@ -6,13 +6,7 @@
 			aria-label="Mercado">
 			<span class="text-xl" aria-hidden="true">🛒</span>
 			Mercado
-			@if (notifications.notificationsMenuMarketCount > 0) {
-			<span
-				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
-				aria-label="{{ notifications.notificationsMenuMarketCount }} notificaciones en Mercado">
-				{{ notifications.notificationsMenuMarketCount }}
-			</span>
-			}
+			<badge-notification [count]="notifications.notificationsMenuMarketCount" [ariaLabel]="notifications.notificationsMenuMarketCount + ' notificaciones en Mercado'" />
 		</a>
 
 		<a routerLink="/budget" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
@@ -20,13 +14,7 @@
 			aria-label="Presupuesto">
 			<span class="text-xl" aria-hidden="true">💰</span>
 			Presupuesto
-			@if (notifications.notificationsMenuBudgetCount > 0) {
-			<span
-				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
-				aria-label="{{ notifications.notificationsMenuBudgetCount }} notificaciones en Presupuesto">
-				{{ notifications.notificationsMenuBudgetCount }}
-			</span>
-			}
+			<badge-notification [count]="notifications.notificationsMenuBudgetCount" [ariaLabel]="notifications.notificationsMenuBudgetCount + ' notificaciones en Presupuesto'" />
 		</a>
 
 		<a routerLink="/settings" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
@@ -34,13 +22,7 @@
 			aria-label="Settings">
 			<span class="text-xl" aria-hidden="true">⚙️</span>
 			Settings
-			@if (notifications.notificationsMenuSettingsCount > 0) {
-			<span
-				class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center"
-				aria-label="{{ notifications.notificationsMenuSettingsCount }} notificaciones en Settings">
-				{{ notifications.notificationsMenuSettingsCount }}
-			</span>
-			}
+			<badge-notification [count]="notifications.notificationsMenuSettingsCount" [ariaLabel]="notifications.notificationsMenuSettingsCount + ' notificaciones en Settings'" />
 		</a>
 	</nav>
 </footer>
