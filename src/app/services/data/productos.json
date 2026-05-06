@@ -1,0 +1,3076 @@
+{
+	"productos": [
+		{
+			"id": "a1f3-9c21",
+			"name": "Cereal 500g",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 8500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b2d4-8a11",
+			"name": "Chicharrones",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Paquete",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "c3e5-7b22",
+			"name": "Cepillos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4f6-6c33",
+			"name": "Harina arepas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e5a7-5d44",
+			"name": "Jabón líquido manos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f6b8-4e55",
+			"name": "Leche chocolate",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5500,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Litro",
+			"toBuy": true,
+			"buyQuantity": 2,
+			"buyUnidad": "Litro",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "a7c9-3f66",
+			"name": "Shampoo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 12000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b8d1-2a77",
+			"name": "Spaghetti",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c9e2-1b88",
+			"name": "Syrup",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Botella",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d1f3-0c99",
+			"name": "Tortilla grande",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e2a4-9d10",
+			"name": "Papel higiénico",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 18000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f3b5-8e21",
+			"name": "Ramen",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a4c6-7f32",
+			"name": "Leche",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Litro",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Litro",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b5d7-6a43",
+			"name": "Ajo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Cabeza",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Cabeza",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c6e8-5b54",
+			"name": "Alka-Seltzer",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7500,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Caja",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d7f9-4c65",
+			"name": "Ambientador",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 9500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e8a1-3d76",
+			"name": "Barra de chocolate",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f9b2-2e87",
+			"name": "Bocadillo veleño",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a1c3-1f98",
+			"name": "Cábano",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "b2d4-0a09",
+			"name": "Chocolate KitKat",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c3e5-9b10",
+			"name": "Cloro",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6500,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Botella",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d4f6-8c21",
+			"name": "Copitos",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e5a7-7d32",
+			"name": "Crema de leche",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f6b8-6e43",
+			"name": "Desodorante",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 11000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a7c9-5f54",
+			"name": "Doritos genéricos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b8d1-4a65",
+			"name": "Frijol refrito",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5200,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Lata",
+			"toBuy": true,
+			"buyQuantity": 2,
+			"buyUnidad": "Lata",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "c9e2-3b76",
+			"name": "Galletas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1f3-2c87",
+			"name": "Galletas chocolate",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e2a4-1d98",
+			"name": "Galletas club",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f3b5-0e09",
+			"name": "Helado",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 12000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Litro",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Litro",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "a4c6-9f10",
+			"name": "Jabón líquido azul",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b5d7-8a21",
+			"name": "Jabón en polvo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 15000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c6e8-7b32",
+			"name": "Lasaña preparada",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 14000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d7f9-6c43",
+			"name": "Limpiador muebles",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 10000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e8a1-5d54",
+			"name": "Limpiatodo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 8000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f9b2-4e65",
+			"name": "Maní divertido",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a1c3-3f76",
+			"name": "Mascarilla",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 10,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 5,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b2d4-2a87",
+			"name": "Mayonesa",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Frasco",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Frasco",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c1a2-1b01",
+			"name": "Mini brownies",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2b3-2c02",
+			"name": "Mogolla",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e3c4-3d03",
+			"name": "Mostaza",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Frasco",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Frasco",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f4d5-4e04",
+			"name": "Palitos chocolate",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a5e6-5f05",
+			"name": "Pan tajado",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b6f7-6a06",
+			"name": "Papas fósforo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c7a8-7b07",
+			"name": "Papas francesas congeladas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Bolsa",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d8b9-8c08",
+			"name": "Pasta de tomate",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Sobre",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Sobre",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e9c1-9d09",
+			"name": "Pastillas baño",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d2-0e10",
+			"name": "Perlas fragancia",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 12000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a2e3-1f11",
+			"name": "Pimienta",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Frasco",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Frasco",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b3f4-2a12",
+			"name": "Ponqué quesitos",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c4a5-3b13",
+			"name": "Salsa de tomate",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Frasco",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Frasco",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d5b6-4c14",
+			"name": "Tapabocas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 8,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 5,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e6c7-5d15",
+			"name": "Toallas desinfectantes",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 8500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f7d8-6e16",
+			"name": "Toallas húmedas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a8e9-7f17",
+			"name": "Toallas húmedas mini",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b9f1-8a18",
+			"name": "Toallas mascotas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 9500,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Paquete",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "c1a2-9b19",
+			"name": "Vinagre",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2b3-0c20",
+			"name": "Yogur griego",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 8000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e3c4-1d21",
+			"name": "Agua oxigenada",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f4d5-2e22",
+			"name": "Aceite vegetal",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 11000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a5e6-3f23",
+			"name": "Aceite de oliva",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 18000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b6f7-4a24",
+			"name": "Alcohol",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "c7a8-5b25",
+			"name": "Arroz 5kg",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 28000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d8b9-6c26",
+			"name": "Arveja",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Lata",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Lata",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e9c1-7d27",
+			"name": "Atún en lata",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Lata",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Lata",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d2-8e28",
+			"name": "Avena",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a2e3-9f29",
+			"name": "Azúcar",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "b3f4-0a30",
+			"name": "Bechamel",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Caja",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "c4a5-1b31",
+			"name": "Salsa boloñesa x2",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d5b6-2c32",
+			"name": "Bolsas Orión",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e6c7-3d33",
+			"name": "Bombillos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f7d8-4e34",
+			"name": "Cabello de ángel",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "a8e9-5f35",
+			"name": "Café",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 18000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1e2-401",
+			"name": "Cebada",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2e3-402",
+			"name": "Cereal Flops",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d3e4-403",
+			"name": "Chocolate",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Tableta",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Tableta",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4e5-404",
+			"name": "Chocolate en polvo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 8500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Tarro",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Tarro",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d5e6-405",
+			"name": "Chorizo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9500,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Paquete",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d6e7-406",
+			"name": "Color",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Sobre",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Sobre",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d7e8-407",
+			"name": "Combo Rica",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d8e9-408",
+			"name": "Conchitas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d9e1-409",
+			"name": "Ducales",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1e2-410",
+			"name": "Dulces surtidos",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2e3-411",
+			"name": "Esponjas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d3e4-412",
+			"name": "Estropajo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4e5-413",
+			"name": "Frijol bola roja",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d5e6-414",
+			"name": "Galletas saltinas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d6e7-415",
+			"name": "Garbanzo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d7e8-416",
+			"name": "Gelatina",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 1500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d8e9-417",
+			"name": "Gomas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d9e1-418",
+			"name": "Gomas Orión",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1e2-419",
+			"name": "Guantes",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Par",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Par",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2e3-420",
+			"name": "Harina de trigo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d3e4-421",
+			"name": "Huevos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 14000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 12,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 12,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4e5-422",
+			"name": "Inhalador",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 12000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d5e6-423",
+			"name": "Jabón loza",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d6e7-424",
+			"name": "Jabón Rey",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d7e8-425",
+			"name": "Lasaña",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 13000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d8e9-426",
+			"name": "Lentejas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d9e1-427",
+			"name": "Limpión",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1e2-428",
+			"name": "Colada Maizena",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2e3-429",
+			"name": "Maíz pira",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d3e4-430",
+			"name": "Margarina",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Tarro",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Tarro",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4e5-431",
+			"name": "Morcilla",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 8000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Paquete",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "d5e6-432",
+			"name": "Mortadela",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d6e7-433",
+			"name": "Pan hamburguesa",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d7e8-434",
+			"name": "Pan perro",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d8e9-435",
+			"name": "Pan sándwich",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d9e1-436",
+			"name": "Panela",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bloque",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bloque",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d1e2-437",
+			"name": "Queso parmesano",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d2e3-438",
+			"name": "Rallador",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 15000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d3e4-439",
+			"name": "Sal",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "d4e5-440",
+			"name": "Salchichas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 8000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e1f2-441",
+			"name": "Salsa soya",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e2f3-442",
+			"name": "Salsa teriyaki",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Botella",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Botella",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e3f4-443",
+			"name": "Sándwich preparado",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e4f5-444",
+			"name": "Sardinas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Lata",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Lata",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e5f6-445",
+			"name": "Tallarines",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e6f7-446",
+			"name": "Toalla cocina 660h",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 14000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Rollo",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Rollo",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e7f8-447",
+			"name": "Toallas higiénicas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e8f9-448",
+			"name": "Tostadas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e9f1-449",
+			"name": "Yogurt",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e1f2-450",
+			"name": "Arepas con queso",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e2f3-451",
+			"name": "Frijol cabeza negra",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e3f4-452",
+			"name": "Frijol caraota",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5400,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e4f5-453",
+			"name": "Paquete grande de papas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 8500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e5f6-454",
+			"name": "Galletas Bridge",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e6f7-455",
+			"name": "Alas de pollo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 12000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e7f8-456",
+			"name": "Atún fresco",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 18000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e8f9-457",
+			"name": "Carne bola",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 22000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e9f1-458",
+			"name": "Filete de res",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 28000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e1f2-459",
+			"name": "Costilla de cerdo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 20000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e2f3-460",
+			"name": "Costilla de res",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 24000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e3f4-461",
+			"name": "Carne en cuadros",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 21000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e4f5-462",
+			"name": "Carne molida",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 19000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e5f6-463",
+			"name": "Carne para asar",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 26000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e6f7-464",
+			"name": "Bola de res",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 23000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e7f8-465",
+			"name": "Pechuga de pollo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 14000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Kg",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e8f9-466",
+			"name": "Pollo entero",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 18000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Unidad",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e9f1-467",
+			"name": "Muchacho",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 25000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e1f2-468",
+			"name": "Pierna de cerdo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 22000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e2f3-469",
+			"name": "Sardinas frescas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 15000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e3f4-470",
+			"name": "Hígados de pollo",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 8000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e4f5-471",
+			"name": "Tocineta",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 11000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Paquete",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Paquete",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e5f6-472",
+			"name": "Falda de res",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 20000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e6f7-473",
+			"name": "Cadera de res",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 24000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e7f8-474",
+			"name": "Bota de res",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 21000,
+				"date": "2026-04"
+			},
+			"inStock": false,
+			"quantity": 0,
+			"unidad": "Kg",
+			"toBuy": true,
+			"buyQuantity": 1,
+			"buyUnidad": "Kg",
+			"stockUpdatedAt": null
+		},
+		{
+			"id": "e8f9-475",
+			"name": "Zanahoria",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e9f1-476",
+			"name": "Plátano",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 6,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 4,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e1f2-477",
+			"name": "Guatila",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e2f3-478",
+			"name": "Papa",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e3f4-479",
+			"name": "Cebolla blanca",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "e4f5-480",
+			"name": "Tomate",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a1-481",
+			"name": "Espinaca",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Manojo",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Manojo",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a2-482",
+			"name": "Limón",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 1500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 6,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 4,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a3-483",
+			"name": "Raíces chinas",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a4-484",
+			"name": "Zucchini",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a5-485",
+			"name": "Mandarina",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 8,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 6,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a6-486",
+			"name": "Banano",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 1600,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 6,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 4,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a7-487",
+			"name": "Arándanos",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 9000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a8-488",
+			"name": "Agraz",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1a9-489",
+			"name": "Aguacate hass",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b0-490",
+			"name": "Mora",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b1-491",
+			"name": "Papa criolla",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b2-492",
+			"name": "Arveja fresca",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b3-493",
+			"name": "Lulo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b4-494",
+			"name": "Pimentón",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b5-495",
+			"name": "Lechuga",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b6-496",
+			"name": "Pepino ensalada",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b7-497",
+			"name": "Cebolla roja",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b8-498",
+			"name": "Cebolla larga",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Manojo",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Manojo",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1b9-499",
+			"name": "Cilantro",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Manojo",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Manojo",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c0-500",
+			"name": "Brócoli",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c1-501",
+			"name": "Habichuela",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Bolsa",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Bolsa",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c2-502",
+			"name": "Pepino guiso",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2200,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c3-503",
+			"name": "Remolacha",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c4-504",
+			"name": "Calabaza",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c5-505",
+			"name": "Manzana",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 2500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c6-506",
+			"name": "Papaya",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c7-507",
+			"name": "Champiñón",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c8-508",
+			"name": "Arracacha",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 2,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1c9-509",
+			"name": "Naranja",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 6,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 4,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d0-510",
+			"name": "Mazorca",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d1-511",
+			"name": "Piña golden",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 7000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d2-512",
+			"name": "Guayaba",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 3000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d3-513",
+			"name": "Maracuyá",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 5000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d4-514",
+			"name": "Guascas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 2000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Manojo",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Manojo",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d5-515",
+			"name": "Banano criollo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 6,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 4,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d6-516",
+			"name": "Durazno",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 4000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 4,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d7-517",
+			"name": "Mango Tommy",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 3500,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 3,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 2,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d8-518",
+			"name": "Fresas",
+			"lastPurchase": {
+				"store": "Éxito",
+				"price": 6000,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 1,
+			"unidad": "Caja",
+			"toBuy": false,
+			"buyQuantity": 1,
+			"buyUnidad": "Caja",
+			"stockUpdatedAt": "2026-05-01"
+		},
+		{
+			"id": "f1d9-519",
+			"name": "Banano bocadillo",
+			"lastPurchase": {
+				"store": "D1",
+				"price": 1800,
+				"date": "2026-04"
+			},
+			"inStock": true,
+			"quantity": 5,
+			"unidad": "Unidad",
+			"toBuy": false,
+			"buyQuantity": 3,
+			"buyUnidad": "Unidad",
+			"stockUpdatedAt": "2026-05-01"
+		}
+	]
+}

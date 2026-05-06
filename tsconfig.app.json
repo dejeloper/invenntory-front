@@ -10,7 +10,8 @@
       "@app/*": ["app/*"],
       "@services/*": ["app/services/*"],
       "@interfaces/*": ["app/interfaces/*"],
-      "@components/*": ["app/components/*"]
+      "@components/*": ["app/components/*"],
+      "@mappers/*": ["app/mappers/*"]
     }
   },
   "include": ["src/**/*.ts"],

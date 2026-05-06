@@ -11,7 +11,7 @@ export class NotificationsService {
   notificationsMenuSettings = signal<INotificationSetting[]>([]);
 
   initialize() {
-    this.mockApi.get<{notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsMenuSettings: INotificationSetting[]}>('getNotificationsMenu')
+    this.mockApi.get<{notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsMenuSettings: INotificationSetting[]}>('notifications', 'getNotificationsMenu')
       .subscribe(response => {
         if (response.success && response.data) {
           this.notificationsMenuMarket.set(response.data.notificationsMenuMarket);
