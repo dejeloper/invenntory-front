@@ -3,7 +3,6 @@ import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'badge-notification',
-  standalone: true,
   imports: [NgClass],
   templateUrl: './badge-notification.html',
 })

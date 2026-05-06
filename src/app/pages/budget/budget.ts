@@ -7,7 +7,6 @@ interface Expense {
 
 @Component({
   selector: 'budget',
-  standalone: true,
   templateUrl: './budget.html',
 })
 export class Budget {

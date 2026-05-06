@@ -3,7 +3,6 @@ import {NotificationsService} from '@services/notifications.service';
 
 @Component({
   selector: 'notifications-settings',
-  standalone: true,
   templateUrl: './notifications.html',
 })
 export class NotificationsSettings {

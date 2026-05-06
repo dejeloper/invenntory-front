@@ -15,7 +15,6 @@ interface SettingsItem {
 
 @Component({
   selector: 'settings',
-  standalone: true,
   imports: [
     CommonModule,
     NotificationsSettings,

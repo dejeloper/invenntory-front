@@ -8,7 +8,6 @@ interface Product {
 
 @Component({
   selector: 'market',
-  standalone: true,
   templateUrl: './market.html',
 })
 export class Market {

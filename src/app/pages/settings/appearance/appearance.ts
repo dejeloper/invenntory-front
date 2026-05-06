@@ -3,7 +3,6 @@ import {Toast} from '@services/toast';
 
 @Component({
   selector: 'appearance-settings',
-  standalone: true,
   templateUrl: './appearance.html',
 })
 export class AppearanceSettings {

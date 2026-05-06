@@ -4,7 +4,6 @@ import {BadgeNotification} from '@app/components/shared/badge-notification/badge
 
 @Component({
   selector: 'footer-button',
-  standalone: true,
   imports: [RouterLink, RouterLinkActive, BadgeNotification],
   templateUrl: './footer-button.html',
 })
