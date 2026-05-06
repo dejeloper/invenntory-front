@@ -2,29 +2,29 @@
   "notificationsMenuMarket": [
     {
       "name": "Promociones",
-      "number": 4
+      "number": 0
     },
     {
       "name": "Nuevos productos",
-      "number": 1
+      "number": 0
     },
     {
       "name": "Ofertas exclusivas",
-      "number": 2
+      "number": 0
     }
   ],
   "notificationsMenuBudget": [
     {
       "name": "Alertas de gasto",
-      "number": 3
+      "number": 0
     },
     {
       "name": "Recordatorios de pago",
-      "number": 1
+      "number": 0
     },
     {
       "name": "Notificaciones de ahorro",
-      "number": 1
+      "number": 0
     }
   ],
   "notificationsMenuSettings": [
@@ -36,7 +36,7 @@
           "title": "Recordatorio de compra",
           "message": "No olvides comprar leche",
           "time": "2 min",
-          "read": true
+          "read": false
         },
         {
           "id": 2,
@@ -64,7 +64,7 @@
           "title": "Oferta exclusiva",
           "message": "10% de descuento en tu próxima compra",
           "time": "Hace 2 días",
-          "read": false
+          "read": true
         },
         {
           "id": 6,
@@ -78,7 +78,7 @@
           "title": "Alerta de seguridad",
           "message": "Nuevo inicio de sesión detectado",
           "time": "Hace 4 días",
-          "read": false
+          "read": true
         },
         {
           "id": 8,
@@ -91,11 +91,11 @@
     },
     {
       "name": "Privacidad",
-      "number": 1
+      "number": 0
     },
     {
       "name": "Apariencia",
-      "number": 1
+      "number": 0
     },
     {
       "name": "Acerca de",
