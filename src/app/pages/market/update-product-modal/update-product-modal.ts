@@ -1,4 +1,4 @@
-import {Component, ChangeDetectionStrategy, computed, input, output, signal, effect} from '@angular/core';
+import {Component, ChangeDetectionStrategy, input, output, signal, effect} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Product} from '@interfaces/product';
 import {getTimeSince, formatCurrencyCOP, formatDate} from '@services/time.utils';
@@ -29,40 +29,6 @@ export class UpdateProductModal {
   buyUnidad = signal('Unidad');
   historyVisible = signal(false);
 
-  purchaseHistory = computed(() => {
-    const purchase = this.product().lastPurchase;
-    if (!purchase) {
-      return [] as Array<{date: string; store: string; price: number}>;
-    }
-
-    const baseDate = new Date(purchase.date);
-    const safeDate = Number.isNaN(baseDate.getTime()) ? new Date() : baseDate;
-
-    const withMonthsBack = (monthsBack: number): string => {
-      const date = new Date(safeDate);
-      date.setMonth(date.getMonth() - monthsBack);
-      return date.toISOString().slice(0, 10);
-    };
-
-    return [
-      {
-        date: withMonthsBack(0),
-        store: purchase.store,
-        price: purchase.price,
-      },
-      {
-        date: withMonthsBack(1),
-        store: purchase.store,
-        price: Math.max(0, purchase.price - 300),
-      },
-      {
-        date: withMonthsBack(2),
-        store: 'Carulla',
-        price: Math.max(0, purchase.price - 400),
-      },
-    ];
-  });
-
   constructor() {
     effect(() => {
       const p = this.product();
@@ -74,10 +40,6 @@ export class UpdateProductModal {
       this.buyUnidad.set(p.buyUnidad || 'Unidad');
       this.historyVisible.set(false);
     });
-  }
-
-  toggleHistory(): void {
-    this.historyVisible.update(visible => !visible);
   }
 
   onSave(): void {
@@ -92,3 +54,4 @@ export class UpdateProductModal {
     });
   }
 }
+
