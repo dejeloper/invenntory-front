@@ -1,11 +1,10 @@
-import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {RouterLink, RouterLinkActive} from '@angular/router';
-import {BadgeNotification} from '@app/components/shared/badge-notification/badge-notification';
-import {NotificationsService} from '@services/notifications.service';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { NotificationsService } from '@services/notifications.service';
+import { FooterButton } from '@app/components/shared/footer-button/footer-button';
 
 @Component({
 	selector: 'app-footer',
-	imports: [RouterLink, RouterLinkActive, BadgeNotification],
+	imports: [FooterButton],
 	templateUrl: './footer.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
