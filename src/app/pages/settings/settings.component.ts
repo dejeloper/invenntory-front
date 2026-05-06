@@ -8,6 +8,7 @@ import { NotificationsService } from '../../notifications.service';
 
 interface SettingsItem {
   id: string;
+  icon: string;
 }
 
 @Component({
@@ -26,10 +27,10 @@ export class SettingsComponent {
   notifications = inject(NotificationsService);
 
   items = signal<SettingsItem[]>([
-    { id: 'notifications' },
-    { id: 'privacy' },
-    { id: 'appearance' },
-    { id: 'about' },
+    { id: 'notifications', icon: '🔔' },
+    { id: 'privacy', icon: '🔒' },
+    { id: 'appearance', icon: '🎨' },
+    { id: 'about', icon: 'ℹ️' },
   ]);
 
   expanded = signal<string>('');
