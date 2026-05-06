@@ -3,51 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about-settings',
   standalone: true,
-  template: `
-    <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
-      
-      <div class="px-4 py-4 border-b border-border-silver">
-        <p class="text-base text-medium-gray">Desarrollador</p>
-        <p class="text-base font-medium">Jhonatan Guerrero</p>
-      </div>
-
-      <a 
-        href="https://github.com/dejeloper" 
-        target="_blank"
-        class="flex justify-between items-center px-4 py-3 border-b border-border-silver"
-      >
-        <span>GitHub</span>
-        <span class="text-medium-gray">›</span>
-      </a>
-
-      <a 
-        href="https://x.com/dejeloper" 
-        target="_blank"
-        class="flex justify-between items-center px-4 py-3 border-b border-border-silver"
-      >
-        <span>X</span>
-        <span class="text-medium-gray">›</span>
-      </a>
-
-      <a 
-        href="https://instagram.com/dejeloper" 
-        target="_blank"
-        class="flex justify-between items-center px-4 py-3 border-b border-border-silver"
-      >
-        <span>Instagram</span>
-        <span class="text-medium-gray">›</span>
-      </a>
-
-      <a 
-        href="https://dejeloper.com" 
-        target="_blank"
-        class="flex justify-between items-center px-4 py-3"
-      >
-        <span>Web</span>
-        <span class="text-medium-gray">›</span>
-      </a>
-
-    </div>
-  `,
+  templateUrl: './about.html',
 })
 export class AboutSettingsComponent {}

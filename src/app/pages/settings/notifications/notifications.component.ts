@@ -11,23 +11,7 @@ interface Notification {
 @Component({
   selector: 'app-notifications-settings',
   standalone: true,
-  template: `
-    <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
-      @for (notif of notifications(); track notif.id) {
-        <div 
-          class="flex items-start gap-3 px-4 py-3 border-b border-border-silver last:border-b-0"
-          [class.bg-interactive-blue/5]="!notif.read"
-        >
-          <div class="w-2 h-2 mt-2 rounded-full bg-interactive-blue" [class.opacity-0]="notif.read"></div>
-          <div class="flex-1">
-            <p class="text-base font-medium">{{ notif.title }}</p>
-            <p class="text-xs text-medium-gray">{{ notif.message }}</p>
-            <p class="text-xs text-light-gray mt-1">{{ notif.time }}</p>
-          </div>
-        </div>
-      }
-    </div>
-  `,
+  templateUrl: './notifications.html',
 })
 export class NotificationsSettingsComponent {
   notifications = signal<Notification[]>([
