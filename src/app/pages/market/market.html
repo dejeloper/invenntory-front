@@ -1,4 +1,4 @@
-<div class="md:w-screen md:-ml-[calc(50vw-50%)] md:flex md:h-[calc(100dvh-3rem)] md:overflow-hidden">
+<div class="md:w-screen md:-ml-[calc(50vw-50%)] md:flex md:h-[calc(100dvh-9rem)] md:overflow-hidden">
   <aside
     class="hidden md:flex md:flex-col md:justify-between md:w-72 md:shrink-0 md:border-r md:border-border-silver md:bg-pure-white md:px-5 md:py-6 md:gap-5 md:sticky md:top-0 md:h-[calc(100dvh-9rem)]">
     <h2 class="text-xl font-semibold text-midnight-graphite md:block hidden">🛒 Mercado</h2>
@@ -66,7 +66,7 @@
         </label>
       </div>
     </div>
-    <div class="md:h-[calc(100dvh-9rem)] ">
+    <div class="flex flex-col md:flex-1 md:overflow-hidden">
       <div
         class="hidden md:flex items-center justify-between px-6 py-4 border-b border-border-silver bg-pure-white shrink-0">
         <p class="text-sm text-medium-gray">
@@ -74,7 +74,7 @@
         </p>
       </div>
       <section
-        class=" px-0 md:px-6 md:py-4 max-h-[calc(100dvh-20rem)] overflow-y-auto md:max-h-none md:overflow-visible">
+        class="px-0 md:px-6 md:py-4 max-h-[calc(100dvh-20rem)] overflow-y-auto md:flex-1 md:max-h-none md:overflow-y-auto">
         <div class="space-y-2 md:space-y-0 md:grid md:grid-cols-2 md:gap-3">
           @for (product of paginatedProducts(); track product.id) {
           <product-card [product]="product" (edit)="openEditModal($event)" />
@@ -106,7 +106,6 @@
         </button>
       </nav>
       }
-
     </div>
   </div>
 </div>
