@@ -3,7 +3,7 @@ import {appConfig} from '../../config';
 
 @Component({
 	selector: 'app-header',
-	templateUrl: './header.component.html',
+	templateUrl: './header.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {

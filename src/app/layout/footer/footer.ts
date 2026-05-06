@@ -1,12 +1,12 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {NotificationsService} from '../../services/notifications.service';
-import {BadgeNotificationComponent} from '../../components/shared/badge-notification/badge-notification';
+import {BadgeNotificationComponent} from '../../components/shared';
 
 @Component({
 	selector: 'app-footer',
 	imports: [RouterLink, RouterLinkActive, BadgeNotificationComponent],
-	templateUrl: './footer.component.html',
+	templateUrl: './footer.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Footer {
