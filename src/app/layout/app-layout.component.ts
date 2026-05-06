@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { appConfig } from '../config';
+import { ToastController } from '../toast.service';
 
 @Component({
   selector: 'app-layout',
@@ -10,4 +11,5 @@ import { appConfig } from '../config';
 })
 export class AppLayout {
   appName = appConfig.name;
+  toast = inject(ToastController);
 }
