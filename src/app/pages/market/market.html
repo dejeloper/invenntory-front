@@ -1,20 +1,22 @@
 <h2 class="text-xl font-semibold text-midnight-graphite mb-4">🛒 Mercado</h2>
 
-<div class="mb-4">
-  <search-bar class="mb-3" [value]="searchQuery()" (valueChange)="searchQuery.set($event)" (search)="search()"
-    placeholder="Buscar producto..." />
+<div class="sticky -top-4 left-0 right-0 z-20 bg-white w-screen  -ml-[calc(50vw-50%)] mb-4">
+  <div class="px-4 py-3">
+    <search-bar class="mb-3" [value]="searchQuery()" (valueChange)="searchQuery.set($event)" (search)="search()"
+      placeholder="Buscar producto..." />
 
-  <label class="flex items-center gap-2 px-2 bg-gray-50 border border-gray-200 rounded-xl">
-    <input type="checkbox" [(ngModel)]="showOnlyToBuy" class="w-5 h-5 rounded accent-gray-800" />
-    <span class="text-base text-medium-gray">Por comprar</span>
-    <div class="py-4 rounded-xl gap-2 flex items-center ml-auto">
-      @if (totalBuyQuantity() > 0) {
-      <span class="text-caption text-medium-gray">Estimado:</span>
-      <span class="text-sm font-semibold">{{ formatCurrency(estimatedTotal()) }}</span>
-      <span class="ml-auto bg-gray-800 text-pure-white text-xs px-2 py-1 rounded-full">{{ toBuyCount() }}</span>
-      }
-    </div>
-  </label>
+    <label class="flex items-center gap-2 px-2 bg-gray-50 border border-gray-200 rounded-xl">
+      <input type="checkbox" [(ngModel)]="showOnlyToBuy" class="w-5 h-5 rounded accent-gray-800" />
+      <span class="text-base text-medium-gray">Por comprar</span>
+      <div class="py-4 rounded-xl gap-2 flex items-center ml-auto">
+        @if (totalBuyQuantity() > 0) {
+        <span class="text-caption text-medium-gray">Estimado:</span>
+        <span class="text-sm font-semibold">{{ formatCurrency(estimatedTotal()) }}</span>
+        <span class="ml-auto bg-gray-800 text-pure-white text-xs px-2 py-1 rounded-full">{{ toBuyCount() }}</span>
+        }
+      </div>
+    </label>
+  </div>
 </div>
 
 <div class="space-y-2">
