@@ -1,4 +1,4 @@
-import {Component, signal, computed, ChangeDetectionStrategy, inject} from '@angular/core';
+import {Component, signal, computed, effect, ChangeDetectionStrategy, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {Product} from '@interfaces/product';
 import {formatCurrencyCOP} from '@services/time.utils';
@@ -30,6 +30,9 @@ export class Market {
   showUpdateModal = signal(false);
   selectedProduct = signal<Product | null>(null);
 
+  readonly pageSize = 10;
+  currentPage = signal(1);
+
   filteredProducts = computed(() => {
     // products sorted by name  
     let products = this.products().map(p => p).sort((a, b) => a.name.localeCompare(b.name));
@@ -46,6 +49,13 @@ export class Market {
     return products;
   });
 
+  totalPages = computed(() => Math.max(1, Math.ceil(this.filteredProducts().length / this.pageSize)));
+
+  paginatedProducts = computed(() => {
+    const start = (this.currentPage() - 1) * this.pageSize;
+    return this.filteredProducts().slice(start, start + this.pageSize);
+  });
+
   toBuyCount = computed(() => this.products().filter(p => p.toBuy).length);
 
   totalBuyQuantity = computed(() =>
@@ -60,6 +70,24 @@ export class Market {
     this.productsService.getProducts().subscribe(products => {
       this.products.set(products);
     });
+
+    effect(() => {
+      this.searchQuery();
+      this.showOnlyToBuy();
+      this.currentPage.set(1);
+    });
+  }
+
+  nextPage(): void {
+    if (this.currentPage() < this.totalPages()) {
+      this.currentPage.update(p => p + 1);
+    }
+  }
+
+  prevPage(): void {
+    if (this.currentPage() > 1) {
+      this.currentPage.update(p => p - 1);
+    }
   }
 
   search(): void {

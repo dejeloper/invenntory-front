@@ -20,12 +20,32 @@
 </div>
 
 <div class="space-y-2">
-  @for (product of filteredProducts(); track product.id) {
+  @for (product of paginatedProducts(); track product.id) {
   <product-card [product]="product" (edit)="openEditModal($event)" />
   } @empty {
   <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
   }
 </div>
+
+@if (totalPages() > 1) {
+<nav class="flex items-center justify-center gap-3 py-4" aria-label="Paginación">
+  <button (click)="prevPage()" [attr.aria-disabled]="currentPage() === 1" [class.opacity-40]="currentPage() === 1"
+    [class.pointer-events-none]="currentPage() === 1"
+    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 text-medium-gray active:scale-95 transition-transform"
+    aria-label="Página anterior">
+    ‹
+  </button>
+  <span class="text-sm text-medium-gray" aria-live="polite" aria-atomic="true">
+    {{ currentPage() }} / {{ totalPages() }}
+  </span>
+  <button (click)="nextPage()" [attr.aria-disabled]="currentPage() === totalPages()"
+    [class.opacity-40]="currentPage() === totalPages()" [class.pointer-events-none]="currentPage() === totalPages()"
+    class="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 text-medium-gray active:scale-95 transition-transform"
+    aria-label="Página siguiente">
+    ›
+  </button>
+</nav>
+}
 
 @if (showAddModal()) {
 <modal-sheet ariaLabel="Agregar producto" (close)="closeModals()">
