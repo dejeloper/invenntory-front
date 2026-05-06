@@ -1,5 +1,4 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {appConfig} from '@app/config';
 
 @Component({
 	selector: 'app-header',
@@ -7,5 +6,5 @@ import {appConfig} from '@app/config';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {
-	appName = appConfig.name;
+	appName = import.meta.env.NG_APP_NAME as string;
 }

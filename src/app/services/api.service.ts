@@ -1,7 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '@env/environment';
 
 export interface ApiRequest {
   service: string;
@@ -18,7 +17,7 @@ export interface ApiResponse<T = unknown> {
 @Injectable({ providedIn: 'root' })
 export class ApiService {
   private http = inject(HttpClient);
-  private baseUrl = environment.apiUrl;
+  private baseUrl = import.meta.env.NG_APP_API_URL as string;
 
   request<T>(request: ApiRequest): Observable<ApiResponse<T>> {
     const { service, payload, method = 'POST' } = request;
