@@ -1,28 +1,28 @@
 <footer
-	class="fixed bottom-0 left-0 right-0 bg-pure-white/75 backdrop-blur-md border-t border-border-silver md:flex md:justify-center">
-	<nav class="flex justify-around py-4 md:w-full md:max-w-120" aria-label="Main navigation">
+	class="fixed bottom-0 left-0 right-0 bg-pure-white/95 backdrop-blur-md border-t border-border-silver shadow-[0_-2px_10px_rgba(0,0,0,0.05)] md:flex md:justify-center">
+	<nav class="flex justify-around py-3 md:w-full md:max-w-120" aria-label="Main navigation">
 		<a routerLink="/market" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
-			class="flex flex-col items-center text-sm text-medium-gray rounded-xl px-3 py-1 transition-all duration-200 relative"
+			class="flex flex-col items-center text-base font-medium text-medium-gray rounded-2xl px-4 py-2 transition-all duration-200 relative border border-gray-100 shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
 			aria-label="Mercado">
-			<span class="text-xl" aria-hidden="true">🛒</span>
+			<span class="text-2xl block mb-1" aria-hidden="true">🛒</span>
 			Mercado
 			<badge-notification [count]="notifications.notificationsMenuMarketCount"
 				[ariaLabel]="notifications.notificationsMenuMarketCount + ' notificaciones en Mercado'" />
 		</a>
 
 		<a routerLink="/budget" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
-			class="flex flex-col items-center text-sm text-medium-gray rounded-xl px-3 py-1 transition-all duration-200 relative"
+			class="flex flex-col items-center text-base font-medium text-medium-gray rounded-2xl px-4 py-2 transition-all duration-200 relative border border-gray-100 shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
 			aria-label="Presupuesto">
-			<span class="text-xl" aria-hidden="true">💰</span>
+			<span class="text-2xl block mb-1" aria-hidden="true">💰</span>
 			Presupuesto
 			<badge-notification [count]="notifications.notificationsMenuBudgetCount"
 				[ariaLabel]="notifications.notificationsMenuBudgetCount + ' notificaciones en Presupuesto'" />
 		</a>
 
 		<a routerLink="/settings" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
-			class="flex flex-col items-center text-sm text-medium-gray rounded-xl px-3 py-1 transition-all duration-200 relative"
+			class="flex flex-col items-center text-base font-medium text-medium-gray rounded-2xl px-4 py-2 transition-all duration-200 relative border border-gray-100 shadow-[0_1px_2px_rgba(0,0,0,0.05)]"
 			aria-label="Settings">
-			<span class="text-xl" aria-hidden="true">⚙️</span>
+			<span class="text-2xl block mb-1" aria-hidden="true">⚙️</span>
 			Settings
 			<badge-notification [count]="notifications.notificationsMenuSettingsCount"
 				[ariaLabel]="notifications.notificationsMenuSettingsCount + ' notificaciones en Settings'" />
