@@ -31,12 +31,12 @@ function mapSettings(value: unknown): INotificationSetting[] {
 	return value
 		.filter((setting): setting is Partial<INotificationSetting> => isRecord(setting))
 		.map((setting) => {
-			const hasValidNumber = typeof setting.number === 'number';
-			const notifications = mapGeneralNotifications(setting.notificaciones);
+			const notifications = mapGeneralNotifications(setting['notificaciones']);
+			const number = typeof setting['number'] === 'number' ? setting['number'] : notifications.length;
 
 			return {
-				name: typeof setting.name === 'string' ? setting.name : '',
-				number: hasValidNumber ? setting.number : notifications.length,
+				name: typeof setting['name'] === 'string' ? setting['name'] : '',
+				number,
 				notificaciones: notifications.length > 0 ? notifications : undefined,
 			};
 		})
@@ -56,7 +56,7 @@ function isNotificationItem(value: unknown): value is INotificationItem {
 		return false;
 	}
 
-	return typeof value.name === 'string' && typeof value.number === 'number';
+	return typeof value['name'] === 'string' && typeof value['number'] === 'number';
 }
 
 function isNotificationGeneral(value: unknown): value is INotificationGeneral {
@@ -65,11 +65,11 @@ function isNotificationGeneral(value: unknown): value is INotificationGeneral {
 	}
 
 	return (
-		typeof value.id === 'number' &&
-		typeof value.title === 'string' &&
-		typeof value.message === 'string' &&
-		typeof value.time === 'string' &&
-		typeof value.read === 'boolean'
+		typeof value['id'] === 'number' &&
+		typeof value['title'] === 'string' &&
+		typeof value['message'] === 'string' &&
+		typeof value['time'] === 'string' &&
+		typeof value['read'] === 'boolean'
 	);
 }
 
