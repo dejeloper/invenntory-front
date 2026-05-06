@@ -2,32 +2,32 @@
 
 <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
   @for (item of items(); track item.id) {
-    <div class="border-b border-border-silver last:border-b-0">
-      <button (click)="toggle(item.id)" class="w-full flex justify-between items-center px-4 py-3 text-left">
-        <div class="flex items-center gap-2">
-          <span class="text-lg">{{ item.icon }}</span>
-          <span class="text-base font-medium">{{ getLabel(item.id) }}</span>
-        </div>
-        <div class="flex items-center gap-3">
-          @if (notifications.getSectionBadge(item.id) > 0) {
-            <span class="w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
-              {{ notifications.getSectionBadge(item.id) }}
-            </span>
-          }
-          <span class="text-medium-gray text-lg transition-transform" [class.rotate-90]="expanded() === item.id">›</span>
-        </div>
-      </button>
+  <div class="border-b border-border-silver last:border-b-0">
+    <button (click)="toggle(item.id)" class="w-full flex justify-between items-center px-4 py-3 text-left">
+      <div class="flex items-center gap-2">
+        <span class="text-lg">{{ item.icon }}</span>
+        <span class="text-base font-medium">{{ getLabel(item.id) }}</span>
+      </div>
+      <div class="flex items-center gap-3">
+        @if (notifications.getSectionBadge(item.id) > 0) {
+        <span class="w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
+          {{ notifications.getSectionBadge(item.id) }}
+        </span>
+        }
+        <span class="text-medium-gray text-lg transition-transform" [class.rotate-90]="expanded() === item.id">›</span>
+      </div>
+    </button>
 
-      @if (expanded() === item.id) {
-        <div class="border-t border-border-silver m-1 p-2 rounded">
-          @switch (item.id) {
-          @case ('notifications') { <app-notifications-settings /> }
-          @case ('privacy') { <app-privacy-settings /> }
-          @case ('appearance') { <app-appearance-settings /> }
-          @case ('about') { <app-about-settings /> }
-          }
-        </div>
+    @if (expanded() === item.id) {
+    <div class="border-t border-border-silver m-1 p-2 rounded">
+      @switch (item.id) {
+      @case ('notifications') { <notifications-settings /> }
+      @case ('privacy') { <privacy-settings /> }
+      @case ('appearance') { <appearance-settings /> }
+      @case ('about') { <about-settings /> }
       }
     </div>
+    }
+  </div>
   }
 </div>

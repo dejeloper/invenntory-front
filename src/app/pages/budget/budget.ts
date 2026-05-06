@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 interface Expense {
   name: string;
@@ -6,15 +6,15 @@ interface Expense {
 }
 
 @Component({
-  selector: 'app-budget',
+  selector: 'budget',
   standalone: true,
   templateUrl: './budget.html',
 })
-export class BudgetComponent {
+export class Budget {
   items: Expense[] = [
-    { name: 'Arriendo', price: 1200000 },
-    { name: 'Servicios', price: 200000 },
-    { name: 'Internet', price: 80000 },
+    {name: 'Arriendo', price: 1200000},
+    {name: 'Servicios', price: 200000},
+    {name: 'Internet', price: 80000},
   ];
 
   paid = 1000000;

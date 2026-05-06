@@ -1,12 +1,12 @@
-import { Component, inject } from '@angular/core';
-import { ToastController } from '../../../toast.service';
+import {Component, inject} from '@angular/core';
+import {ToastController} from '../../../toast.service';
 
 @Component({
-  selector: 'app-appearance-settings',
+  selector: 'appearance-settings',
   standalone: true,
   templateUrl: './appearance.html',
 })
-export class AppearanceSettingsComponent {
+export class AppearanceSettings {
   private toast = inject(ToastController);
 
   showNoPermission() {

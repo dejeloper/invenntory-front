@@ -8,6 +8,6 @@ import {NotificationsService} from '../../notifications.service';
 	templateUrl: './footer.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent {
+export class Footer {
 	notifications = inject(NotificationsService);
 }

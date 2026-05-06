@@ -6,6 +6,6 @@ import {appConfig} from '../../config';
 	templateUrl: './header.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {
+export class Header {
 	appName = appConfig.name;
 }

@@ -9,11 +9,11 @@ interface Notification {
 }
 
 @Component({
-  selector: 'app-notifications-settings',
+  selector: 'notifications-settings',
   standalone: true,
   templateUrl: './notifications.html',
 })
-export class NotificationsSettingsComponent {
+export class NotificationsSettings {
   notifications = signal<Notification[]>([
     {id: 1, title: 'Recordatorio de compra', message: 'No olvides comprar leche', time: '2 min', read: false},
     {id: 2, title: 'Alerta de presupuesto', message: 'Te quedan $50.000 disponibles', time: '1 hora', read: false},
