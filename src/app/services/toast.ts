@@ -1,7 +1,7 @@
-import { Injectable, inject, signal } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
-export class ToastController {
+export class Toast {
   private message = signal<string | null>(null);
   private isVisible = signal(false);
 

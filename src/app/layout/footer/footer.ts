@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {NotificationsService} from '../../services/notifications.service';
-import {BadgeNotificationComponent} from '../../components/shared/badge';
+import {BadgeNotificationComponent} from '../../components/shared/badge-notification/badge-notification';
 
 @Component({
 	selector: 'app-footer',

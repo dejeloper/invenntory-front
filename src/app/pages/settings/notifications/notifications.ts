@@ -1,6 +1,5 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {NotificationsService} from '../../../services/notifications.service';
-import {INotificationGeneral} from '../../../interfaces/notifications';
 
 @Component({
   selector: 'notifications-settings',

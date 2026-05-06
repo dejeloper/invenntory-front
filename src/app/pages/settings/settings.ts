@@ -6,7 +6,7 @@ import {PrivacySettings} from './privacy/privacy';
 import {AppearanceSettings} from './appearance/appearance';
 import {AboutSettings} from './about/about';
 import {INotificationSetting} from '../../interfaces/notifications';
-import {BadgeNotificationComponent} from '../../components/shared/badge';
+import {BadgeNotificationComponent} from '../../components/shared/badge-notification/badge-notification';
 
 interface SettingsItem {
   id: string;

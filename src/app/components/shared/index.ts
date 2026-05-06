@@ -1,0 +1,1 @@
+export * from './badge-notification/badge-notification';

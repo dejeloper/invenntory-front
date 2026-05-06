@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {ToastController} from '../toast.service';
+import {Toast} from '../services/toast';
 import {Header} from './header/header';
 import {Footer} from './footer/footer';
 
@@ -11,5 +11,5 @@ import {Footer} from './footer/footer';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppLayout {
-  toast = inject(ToastController);
+  toast = inject(Toast);
 }

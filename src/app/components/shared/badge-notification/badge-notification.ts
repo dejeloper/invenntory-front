@@ -1,5 +1,5 @@
-import { Component, input } from '@angular/core';
-import { NgClass } from '@angular/common';
+import {Component, input} from '@angular/core';
+import {NgClass} from '@angular/common';
 
 @Component({
   selector: 'badge-notification',

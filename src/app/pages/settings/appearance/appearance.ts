@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {ToastController} from '../../../toast.service';
+import {Toast} from '../../../services/toast';
 
 @Component({
   selector: 'appearance-settings',
@@ -7,7 +7,7 @@ import {ToastController} from '../../../toast.service';
   templateUrl: './appearance.html',
 })
 export class AppearanceSettings {
-  private toast = inject(ToastController);
+  private toast = inject(Toast);
 
   showNoPermission() {
     this.toast.show('No tiene permisos para modificar');
