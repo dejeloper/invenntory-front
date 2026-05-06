@@ -6,58 +6,56 @@
     <div>
       <p class="text-[22px] font-medium text-midnight-graphite leading-[1.1] mb-1.5">{{ product().name }}</p>
       @if (product().lastPurchase) {
-        <div class="flex items-center gap-1.5 flex-wrap">
-          <span class="text-[10px] text-medium-gray bg-canvas-white px-2 py-[3px] rounded-full flex items-center gap-1">
-            <span aria-hidden="true">⏱</span>
-            {{ getTimeSince(product().lastPurchase!.date) }}
-          </span>
-          <span class="text-[12px] text-medium-gray bg-canvas-white px-2 py-[3px] rounded-full">
-            🏪 {{ product().lastPurchase!.store }} · {{ formatCurrency(product().lastPurchase!.price) }} 💵
-          </span>
-        </div>
+      <div class="flex items-center gap-1.5 flex-wrap">
+        <span class="text-[10px] text-medium-gray bg-canvas-white px-2 py-0.75 rounded-full flex items-center gap-1">
+          <span aria-hidden="true">⏱</span>
+          {{ getTimeSince(product().lastPurchase!.date) }}
+        </span>
+        <span class="text-caption text-medium-gray bg-canvas-white px-2 py-0.75 rounded-full">
+          🏪 {{ product().lastPurchase!.store }} · {{ formatCurrency(product().lastPurchase!.price) }} 💵
+        </span>
+      </div>
       }
     </div>
 
     @if (product().lastPurchase) {
-      <button
-        aria-label="Ver historial de compras"
-        (click)="historyVisible.set(!historyVisible())"
-        class="flex-shrink-0 text-[12px] font-medium text-deep-gray bg-canvas-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-border-silver active:scale-95 transition-transform">
-        <span aria-hidden="true">📋</span> Historial
-      </button>
+    <button aria-label="Ver historial de compras" (click)="historyVisible.set(!historyVisible())"
+      class="shrink-0 text-caption font-medium text-deep-gray bg-canvas-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 border border-border-silver active:scale-95 transition-transform">
+      <span aria-hidden="true">📋</span> Historial
+    </button>
     }
   </div>
 
   @if (historyVisible()) {
-    <div class="bg-canvas-white rounded-[14px] px-4 py-3 mb-2">
-      <p class="text-[11px] text-medium-gray uppercase tracking-[0.04em] mb-2.5">Últimas compras</p>
-      <div class="flex flex-col gap-2">
-        <div class="flex justify-between items-center">
-          <span class="text-[13px] text-deep-gray">31/03/2026</span>
-          <span class="text-[13px] text-medium-gray">Éxito</span>
-          <span class="text-[13px] font-medium text-midnight-graphite">$4.500</span>
-        </div>
-        <div class="h-px bg-lightest-gray-background"></div>
-        <div class="flex justify-between items-center">
-          <span class="text-[13px] text-deep-gray">05/02/2026</span>
-          <span class="text-[13px] text-medium-gray">Éxito</span>
-          <span class="text-[13px] font-medium text-midnight-graphite">$4.200</span>
-        </div>
-        <div class="h-px bg-lightest-gray-background"></div>
-        <div class="flex justify-between items-center">
-          <span class="text-[13px] text-deep-gray">11/01/2026</span>
-          <span class="text-[13px] text-medium-gray">Carulla</span>
-          <span class="text-[13px] font-medium text-midnight-graphite">$4.100</span>
-        </div>
+  <div class="bg-canvas-white rounded-[14px] px-4 py-3 mb-2">
+    <p class="text-[11px] text-medium-gray uppercase tracking-[0.04em] mb-2.5">Últimas compras</p>
+    <div class="flex flex-col gap-2">
+      <div class="flex justify-between items-center">
+        <span class="text-[13px] text-deep-gray">31/03/2026</span>
+        <span class="text-[13px] text-medium-gray">Éxito</span>
+        <span class="text-[13px] font-medium text-midnight-graphite">$4.500</span>
+      </div>
+      <div class="h-px bg-lightest-gray-background"></div>
+      <div class="flex justify-between items-center">
+        <span class="text-[13px] text-deep-gray">05/02/2026</span>
+        <span class="text-[13px] text-medium-gray">Éxito</span>
+        <span class="text-[13px] font-medium text-midnight-graphite">$4.200</span>
+      </div>
+      <div class="h-px bg-lightest-gray-background"></div>
+      <div class="flex justify-between items-center">
+        <span class="text-[13px] text-deep-gray">11/01/2026</span>
+        <span class="text-[13px] text-medium-gray">Carulla</span>
+        <span class="text-[13px] font-medium text-midnight-graphite">$4.100</span>
       </div>
     </div>
+  </div>
   }
 
   <!-- Sections -->
   <div class="flex flex-col gap-0.5">
 
     <!-- ¿Hay en casa? -->
-    <div class="bg-canvas-white rounded-[14px] px-4 py-[14px] flex items-center justify-between">
+    <div class="bg-canvas-white rounded-[14px] px-4 py-3.5 flex items-center justify-between">
       <span class="text-sm text-midnight-graphite">¿Hay en casa?</span>
       <button role="switch" [attr.aria-checked]="inStock()" aria-label="¿Hay en casa?" (click)="inStock.set(!inStock())"
         class="w-12 h-7 rounded-full transition-colors relative"
@@ -69,7 +67,7 @@
     </div>
 
     @if (inStock()) {
-    <div class="bg-canvas-white rounded-[14px] px-4 py-[14px] flex gap-[10px]">
+    <div class="bg-canvas-white rounded-[14px] px-4 py-3.5 flex gap-2.5">
       <div class="flex-1 flex flex-col gap-1">
         <label class="text-[11px] uppercase tracking-[0.04em] text-medium-gray">Cantidad</label>
         <input type="number" [(ngModel)]="quantity" min="0"
@@ -89,7 +87,7 @@
     }
 
     <!-- ¿Comprar? -->
-    <div class="bg-canvas-white rounded-[14px] px-4 py-[14px] flex items-center justify-between">
+    <div class="bg-canvas-white rounded-[14px] px-4 py-3.5 flex items-center justify-between">
       <span class="text-sm text-midnight-graphite">¿Comprar?</span>
       <button role="switch" [attr.aria-checked]="toBuy()" aria-label="¿Comprar?" (click)="toBuy.set(!toBuy())"
         class="w-12 h-7 rounded-full transition-colors relative"
@@ -101,7 +99,7 @@
     </div>
 
     @if (toBuy()) {
-    <div class="bg-canvas-white rounded-[14px] px-4 py-[14px] flex gap-[10px]">
+    <div class="bg-canvas-white rounded-[14px] px-4 py-3.5 flex gap-2.5">
       <div class="flex-1 flex flex-col gap-1">
         <label class="text-[11px] uppercase tracking-[0.04em] text-medium-gray">¿Cuánto?</label>
         <input type="number" [(ngModel)]="buyQuantity" min="1"
@@ -123,13 +121,13 @@
   </div>
 
   <!-- Actions -->
-  <div class="flex gap-[10px] mt-5">
+  <div class="flex gap-2.5 mt-5">
     <button (click)="close.emit()"
-      class="flex-1 py-[13px] rounded-[14px] border border-border-silver bg-transparent text-sm font-medium text-deep-gray active:scale-95 transition-transform flex items-center justify-center gap-1.5">
+      class="flex-1 py-3.25 rounded-[14px] border border-border-silver bg-transparent text-sm font-medium text-deep-gray active:scale-95 transition-transform flex items-center justify-center gap-1.5">
       <span aria-hidden="true">✕</span> Cancelar
     </button>
     <button (click)="onSave()"
-      class="flex-1 py-[13px] rounded-[14px] bg-midnight-graphite text-pure-white text-sm font-medium active:scale-95 transition-transform flex items-center justify-center gap-1.5">
+      class="flex-1 py-3.25 rounded-[14px] bg-midnight-graphite text-pure-white text-sm font-medium active:scale-95 transition-transform flex items-center justify-center gap-1.5">
       <span aria-hidden="true">✓</span> Guardar
     </button>
   </div>
