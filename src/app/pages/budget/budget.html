@@ -1,0 +1,30 @@
+<h1 class="text-display-xl font-semibold tracking-tight mb-6">Presupuesto</h1>
+
+<div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
+  @for (item of items; track item.name; let last = $last) {
+    <div 
+      class="flex justify-between px-4 py-3"
+      [class]="!last ? 'border-b border-border-silver' : ''"
+    >
+      <span>{{ item.name }}</span>
+      <span>{{ item.price }}</span>
+    </div>
+  }
+</div>
+
+<div class="mt-6 space-y-2">
+  <div class="flex justify-between text-base">
+    <span class="text-medium-gray">Total presupuestado</span>
+    <span>{{ total }}</span>
+  </div>
+
+  <div class="flex justify-between text-base">
+    <span class="text-medium-gray">Pagado</span>
+    <span>{{ paid }}</span>
+  </div>
+
+  <div class="flex justify-between text-base font-semibold">
+    <span>Disponible</span>
+    <span>{{ available }}</span>
+  </div>
+</div>

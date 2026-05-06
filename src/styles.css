@@ -1,1 +1,48 @@
 @import 'tailwindcss';
+@import 'tailwind-animations';
+
+@theme {
+  /* Colors */
+  --color-midnight-graphite: #1d1d1f;
+  --color-deep-gray: #333333;
+  --color-charcoal-grey: #474747;
+  --color-medium-gray: #707070;
+  --color-light-gray: #858585;
+  --color-light-silver: #c7c7c7;
+  --color-border-silver: #d6d6d6;
+  --color-lightest-gray-background: #e2e2e5;
+  --color-canvas-white: #f5f5f7;
+  --color-pure-white: #ffffff;
+  --color-true-black: #000000;
+  --color-interactive-blue: #0071e3;
+  --color-action-blue: #0066cc;
+  --color-sky-blue-highlight: #2997ff;
+  --color-cerulean-shine: #3397d4;
+  --color-pale-blue-overlay: #9fc6f4;
+  --color-vibrant-orange: #ec893c;
+  --color-deep-plum: #7424b5;
+  --color-blush-pink: #ea33c0;
+  --color-warm-taupe: #604630;
+  --color-cool-teal: #485b5;
+
+  /* Typography — Scale */
+  --text-caption: 0.75rem;
+  --text-body-sm: 0.875rem;
+  --text-subheading: 1.125rem;
+  --text-callout: 1.3125rem;
+  --text-heading-sm: 1.5rem;
+  --text-heading-lg: 1.75rem;
+  --text-display-xl: 2.125rem;
+  --text-display-xxl: 2.5rem;
+  --text-display-giant: 2.75rem;
+  --text-display: 3.5rem;
+
+  /* Border Radius */
+  --radius-lg: 8px;
+  --radius-lg-2: 11px;
+  --radius-full: 980px;
+  --radius-full-2: 999px;
+
+  /* Shadows */
+  --shadow-xl: 0 3px 5px 30px 0 rgba(0, 0, 0, 0.22);
+}
