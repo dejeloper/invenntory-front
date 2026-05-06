@@ -6,7 +6,8 @@
 			aria-label="Mercado">
 			<span class="text-xl" aria-hidden="true">🛒</span>
 			Mercado
-			<badge-notification [count]="notifications.notificationsMenuMarketCount" [ariaLabel]="notifications.notificationsMenuMarketCount + ' notificaciones en Mercado'" />
+			<badge-notification [count]="notifications.notificationsMenuMarketCount"
+				[ariaLabel]="notifications.notificationsMenuMarketCount + ' notificaciones en Mercado'" />
 		</a>
 
 		<a routerLink="/budget" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
@@ -14,7 +15,8 @@
 			aria-label="Presupuesto">
 			<span class="text-xl" aria-hidden="true">💰</span>
 			Presupuesto
-			<badge-notification [count]="notifications.notificationsMenuBudgetCount" [ariaLabel]="notifications.notificationsMenuBudgetCount + ' notificaciones en Presupuesto'" />
+			<badge-notification [count]="notifications.notificationsMenuBudgetCount"
+				[ariaLabel]="notifications.notificationsMenuBudgetCount + ' notificaciones en Presupuesto'" />
 		</a>
 
 		<a routerLink="/settings" routerLinkActive="text-interactive-blue bg-interactive-blue/10"
@@ -22,7 +24,8 @@
 			aria-label="Settings">
 			<span class="text-xl" aria-hidden="true">⚙️</span>
 			Settings
-			<badge-notification [count]="notifications.notificationsMenuSettingsCount" [ariaLabel]="notifications.notificationsMenuSettingsCount + ' notificaciones en Settings'" />
+			<badge-notification [count]="notifications.notificationsMenuSettingsCount"
+				[ariaLabel]="notifications.notificationsMenuSettingsCount + ' notificaciones en Settings'" />
 		</a>
 	</nav>
 </footer>

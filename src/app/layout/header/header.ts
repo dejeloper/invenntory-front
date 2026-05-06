@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {appConfig} from '../../config';
+import {appConfig} from '@app/config';
 
 @Component({
 	selector: 'app-header',

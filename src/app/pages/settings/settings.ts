@@ -1,12 +1,12 @@
 import {Component, signal, inject} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {NotificationsService} from '../../services/notifications.service';
+import {NotificationsService} from '@services/notifications.service';
 import {NotificationsSettings} from './notifications/notifications';
 import {PrivacySettings} from './privacy/privacy';
 import {AppearanceSettings} from './appearance/appearance';
 import {AboutSettings} from './about/about';
-import {INotificationSetting} from '../../interfaces/notifications';
-import {BadgeNotificationComponent} from '../../components/shared/badge-notification/badge-notification';
+import {INotificationSetting} from '@interfaces/notifications';
+import {BadgeNotification} from '@app/components/shared/badge-notification/badge-notification';
 
 interface SettingsItem {
   id: string;
@@ -22,7 +22,7 @@ interface SettingsItem {
     PrivacySettings,
     AppearanceSettings,
     AboutSettings,
-    BadgeNotificationComponent,
+    BadgeNotification,
   ],
   templateUrl: './settings.html',
 })

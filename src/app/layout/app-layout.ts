@@ -1,8 +1,9 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {Toast} from '../services/toast';
+
 import {Header} from './header/header';
 import {Footer} from './footer/footer';
+import {Toast} from '@app/services/toast';
 
 @Component({
   selector: 'app-layout',

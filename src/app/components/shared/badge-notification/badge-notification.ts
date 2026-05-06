@@ -7,7 +7,7 @@ import {NgClass} from '@angular/common';
   imports: [NgClass],
   templateUrl: './badge-notification.html',
 })
-export class BadgeNotificationComponent {
+export class BadgeNotification {
   count = input.required<number>();
   ariaLabel = input<string>('');
   inline = input<boolean>(false);
