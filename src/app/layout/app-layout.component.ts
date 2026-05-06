@@ -1,17 +1,15 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { appConfig } from '../config';
-import { ToastController } from '../toast.service';
-import { NotificationsService } from '../notifications.service';
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {ToastController} from '../toast.service';
+import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
 
 @Component({
   selector: 'app-layout',
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app-layout.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppLayout {
-  appName = appConfig.name;
   toast = inject(ToastController);
-  notifications = inject(NotificationsService);
 }
