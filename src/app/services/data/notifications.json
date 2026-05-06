@@ -1,0 +1,60 @@
+{
+  "notificationsMenuMarket": [
+    {
+      "name": "Promociones",
+      "number": 4
+    },
+    {
+      "name": "Nuevos productos",
+      "number": 1
+    },
+    {
+      "name": "Ofertas exclusivas",
+      "number": 2
+    }
+  ],
+  "notificationsMenuBudget": [
+    {
+      "name": "Alertas de gasto",
+      "number": 3
+    },
+    {
+      "name": "Recordatorios de pago",
+      "number": 1
+    },
+    {
+      "name": "Notificaciones de ahorro",
+      "number": 1
+    }
+  ],
+  "notificationsGeneral": [
+    {
+      "id": 1,
+      "title": "Recordatorio de compra",
+      "message": "No olvides comprar leche",
+      "time": "2 min",
+      "read": false
+    },
+    {
+      "id": 2,
+      "title": "Alerta de presupuesto",
+      "message": "Te quedan $50.000 disponibles",
+      "time": "1 hora",
+      "read": false
+    },
+    {
+      "id": 3,
+      "title": "Bienvenido",
+      "message": "Gracias por usar Invenntory",
+      "time": "Ayer",
+      "read": true
+    },
+    {
+      "id": 4,
+      "title": "Actualización disponible",
+      "message": "Nueva versión lista",
+      "time": "Ayer",
+      "read": true
+    }
+  ]
+}
