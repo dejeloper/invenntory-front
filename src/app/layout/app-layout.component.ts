@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { appConfig } from '../config';
 import { ToastController } from '../toast.service';
+import { NotificationsService } from '../notifications.service';
 
 @Component({
   selector: 'app-layout',
@@ -12,4 +13,5 @@ import { ToastController } from '../toast.service';
 export class AppLayout {
   appName = appConfig.name;
   toast = inject(ToastController);
+  notifications = inject(NotificationsService);
 }

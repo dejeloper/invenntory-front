@@ -1,26 +1,30 @@
-<h1 class="text-display-xl font-semibold tracking-tight mb-6">Settings</h1>
+<h1 class="text-display-xl font-semibold tracking-tight mb-6">Configuración</h1>
 
 <div class="space-y-3">
   @for (item of items(); track item.id) {
-    <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
-      <button 
-        (click)="toggle(item.id)"
-        class="w-full flex justify-between items-center px-4 py-3"
-      >
-        <span class="text-base">{{ item.label }}</span>
-        <span class="text-medium-gray transition-transform" [class.rotate-90]="expanded() === item.id">›</span>
-      </button>
-      
-      @if (expanded() === item.id) {
-        <div class="px-4 pb-4">
-          @switch (item.id) {
-            @case ('notifications') { <app-notifications-settings /> }
-            @case ('privacy') { <app-privacy-settings /> }
-            @case ('appearance') { <app-appearance-settings /> }
-            @case ('about') { <app-about-settings /> }
-          }
-        </div>
+  <div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
+    <button (click)="toggle(item.id)" class="w-full flex justify-between items-center px-4 py-3">
+      <div class="flex items-center gap-2">
+        <span class="text-base">{{ getLabel(item.id) }}</span>
+        @if (notifications.getSectionBadge(item.id) > 0) {
+          <span class="w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
+            {{ notifications.getSectionBadge(item.id) }}
+          </span>
+        }
+      </div>
+      <span class="text-medium-gray transition-transform" [class.rotate-90]="expanded() === item.id">›</span>
+    </button>
+
+    @if (expanded() === item.id) {
+    <div class="px-4 pb-4">
+      @switch (item.id) {
+      @case ('notifications') { <app-notifications-settings /> }
+      @case ('privacy') { <app-privacy-settings /> }
+      @case ('appearance') { <app-appearance-settings /> }
+      @case ('about') { <app-about-settings /> }
       }
     </div>
+    }
+  </div>
   }
 </div>
