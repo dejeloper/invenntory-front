@@ -1,59 +1,51 @@
 <h2 class="text-xl font-semibold text-midnight-graphite mb-4">🛒 Mercado</h2>
 
 <div class="mb-4">
-  <search-bar
-    class="mb-3"
-    [value]="searchQuery()"
-    (valueChange)="searchQuery.set($event)"
-    (search)="search()"
+  <search-bar class="mb-3" [value]="searchQuery()" (valueChange)="searchQuery.set($event)" (search)="search()"
     placeholder="Buscar producto..." />
 
-  <label class="flex items-center gap-3 px-2">
+  <label class="flex items-center gap-2 px-2 bg-gray-50 border border-gray-200 rounded-xl">
     <input type="checkbox" [(ngModel)]="showOnlyToBuy" class="w-5 h-5 rounded accent-gray-800" />
     <span class="text-base text-medium-gray">Por comprar</span>
-    @if (toBuyCount() > 0) {
+    <div class="py-4 rounded-xl gap-2 flex items-center ml-auto">
+      @if (estimatedTotal() > 0) {
+      <span class="text-caption text-medium-gray">Estimado:</span>
+      <span class="text-sm font-semibold">{{ formatCurrency(estimatedTotal()) }}</span>
+      }
+      @if (toBuyCount() > 0) {
       <span class="ml-auto bg-gray-800 text-pure-white text-xs px-2 py-1 rounded-full">{{ toBuyCount() }}</span>
-    }
+      }
+    </div>
   </label>
 </div>
 
 <div class="space-y-2">
   @for (product of filteredProducts(); track product.id) {
-    <product-card [product]="product" (edit)="openEditModal($event)" />
+  <product-card [product]="product" (edit)="openEditModal($event)" />
   } @empty {
-    <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
+  <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
   }
 </div>
 
-@if (estimatedTotal() > 0) {
-  <div class="mt-6 p-4 bg-gray-100 rounded-xl">
-    <p class="text-sm text-medium-gray">Estimated total</p>
-    <p class="text-xl font-semibold">{{ formatCurrency(estimatedTotal()) }}</p>
-  </div>
-}
-
 @if (showAddModal()) {
-  <modal-sheet ariaLabel="Agregar producto" (close)="closeModals()">
-    <h3 class="text-lg font-semibold mb-4">Agregar producto</h3>
-    <p class="text-sm text-medium-gray mb-4">
-      ¿Agregar "<strong>{{ newProductName() }}</strong>"?
-    </p>
-    <div class="flex gap-3 mt-6">
-      <button (click)="closeModals()"
-        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-100 text-base font-medium text-medium-gray active:scale-95 transition-transform">
-        <span aria-hidden="true">✕</span> Cancelar
-      </button>
-      <button (click)="addProduct()"
-        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-900 text-pure-white text-base font-medium active:scale-95 transition-transform">
-        <span aria-hidden="true">＋</span> Agregar
-      </button>
-    </div>
-  </modal-sheet>
+<modal-sheet ariaLabel="Agregar producto" (close)="closeModals()">
+  <h3 class="text-lg font-semibold mb-4">Agregar producto</h3>
+  <p class="text-sm text-medium-gray mb-4">
+    ¿Agregar "<strong>{{ newProductName() }}</strong>"?
+  </p>
+  <div class="flex gap-3 mt-6">
+    <button (click)="closeModals()"
+      class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-100 text-base font-medium text-medium-gray active:scale-95 transition-transform">
+      <span aria-hidden="true">✕</span> Cancelar
+    </button>
+    <button (click)="addProduct()"
+      class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-900 text-pure-white text-base font-medium active:scale-95 transition-transform">
+      <span aria-hidden="true">＋</span> Agregar
+    </button>
+  </div>
+</modal-sheet>
 }
 
 @if (showUpdateModal() && selectedProduct()) {
-  <update-product-modal
-    [product]="selectedProduct()!"
-    (save)="onProductSave($event)"
-    (close)="closeModals()" />
+<update-product-modal [product]="selectedProduct()!" (save)="onProductSave($event)" (close)="closeModals()" />
 }
