@@ -1,9 +1,8 @@
-import { Injectable, inject } from '@angular/core';
-import { signal } from '@angular/core';
-import { MockApiService } from './mock-api.service';
-import { INotificationGeneral, INotificationItem, INotificationSetting } from '../interfaces/notifications';
+import {Injectable, inject, signal} from '@angular/core';
+import {MockApiService} from './mock-api.service';
+import {INotificationItem, INotificationSetting} from '@interfaces/notifications';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({providedIn: 'root'})
 export class NotificationsService {
   private mockApi = inject(MockApiService);
 
@@ -12,7 +11,7 @@ export class NotificationsService {
   notificationsMenuSettings = signal<INotificationSetting[]>([]);
 
   initialize() {
-    this.mockApi.get<{ notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsMenuSettings: INotificationSetting[] }>('getNotificationsMenu')
+    this.mockApi.get<{notificationsMenuMarket: INotificationItem[], notificationsMenuBudget: INotificationItem[], notificationsMenuSettings: INotificationSetting[]}>('getNotificationsMenu')
       .subscribe(response => {
         if (response.success && response.data) {
           this.notificationsMenuMarket.set(response.data.notificationsMenuMarket);
