@@ -1,9 +1,9 @@
 {
-	"outputDirectory": "dist/invenntory",
+	"outputDirectory": "dist/invenntory/browser",
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "/"
+			"dest": "/index.html"
 		}
 	]
 }
