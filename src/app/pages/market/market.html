@@ -1,18 +1,170 @@
 <h2 class="text-xl font-semibold text-midnight-graphite mb-4">🛒 Mercado</h2>
 
-<div class="bg-pure-white rounded-xl overflow-hidden border border-border-silver">
-  @for (item of items; track item.name; let last = $last) {
-  <div class="flex justify-between items-center px-4 py-3" [class]="!last ? 'border-b border-border-silver' : ''">
-    <div>
-      <p class="text-base">{{ item.name }}</p>
-      <p class="text-xs text-medium-gray">{{ item.store }} - {{ item.price }}</p>
-    </div>
-    <span class="text-medium-gray">›</span>
+<div class="mb-4">
+  <div class="flex items-center bg-gray-200/50 rounded-xl px-3 py-2 mb-3">
+    <span class="text-lg text-gray-400 mr-2">🔍</span>
+    <input type="text" [(ngModel)]="searchQuery" (keydown.enter)="search()" placeholder="Buscar producto..."
+      class="flex-1 bg-transparent text-base outline-none" />
+    @if (searchQuery()) {
+    <button (click)="searchQuery.set('')" class="text-gray-400 text-lg">✕</button>
+    }
   </div>
+
+  <label class="flex items-center gap-3 px-2">
+    <input type="checkbox" [(ngModel)]="showOnlyToBuy" class="w-5 h-5 rounded accent-gray-800" />
+    <span class="text-base text-medium-gray">Por comprar</span>
+    @if (toBuyCount() > 0) {
+    <span class="ml-auto bg-gray-800 text-pure-white text-xs px-2 py-1 rounded-full">{{ toBuyCount() }}</span>
+    }
+  </label>
+</div>
+
+<div class="space-y-2">
+  @for (product of filteredProducts(); track product.id) {
+  <div class="bg-pure-white rounded-xl border border-border-silver p-4">
+    <div class="flex justify-between items-start">
+      <div>
+        <p class="text-base font-medium">{{ product.name }}</p>
+        <p class="text-xs text-medium-gray">
+          @if (product.lastPurchase) {
+          <span class="text-green-600">{{ product.lastPurchase.store }}: {{ formatCurrency(product.lastPurchase.price)
+            }}</span>
+          <span class="text-gray-400"> ({{ getTimeSince(product.lastPurchase.date) }})</span>
+          } @else {
+          Sin precio anterior
+          }
+        </p>
+        <p class="text-xs mt-1">
+          @if (product.inStock) {
+          <span class="text-green-600">✓ Hay ({{ product.quantity }} {{ product.unidad }})</span>
+          } @else {
+          <span class="text-gray-400">○ No hay</span>
+          }
+        </p>
+      </div>
+      <div class="flex flex-col items-end gap-2">
+        @if (product.toBuy) {
+        <span class="text-xs bg-gray-100 text-medium-gray px-2 py-1 rounded-full">Por comprar</span>
+        }
+        <button
+          (click)="selectedProduct.set(product); updateInStock.set(product.inStock); updateQuantity.set(product.quantity); updateUnidad.set(product.unidad); updateToBuy.set(product.toBuy); updateBuyQuantity.set(product.buyQuantity); updateBuyUnidad.set(product.buyUnidad); showUpdateModal.set(true)"
+          aria-label="Editar {{ product.name }}"
+          class="w-8 h-8 flex items-center justify-center rounded-full text-medium-gray active:bg-gray-100 active:scale-95 transition-transform text-base">
+          ✏️
+        </button>
+      </div>
+    </div>
+  </div>
+  } @empty {
+  <p class="text-sm text-medium-gray text-center py-4">No hay productos. Busca para agregar uno.</p>
   }
 </div>
 
-<div class="mt-6 px-1">
-  <p class="text-caption text-medium-gray mb-1">Total mercado</p>
-  <p class="text-heading-lg font-semibold">{{ total }}</p>
+@if (estimatedTotal() > 0) {
+<div class="mt-6 p-4 bg-gray-100 rounded-xl">
+  <p class="text-sm text-medium-gray">Estimated total</p>
+  <p class="text-xl font-semibold">{{ formatCurrency(estimatedTotal()) }}</p>
 </div>
+}
+
+@if (showAddModal()) {
+<div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" (click)="closeModals()">
+  <div class="bg-pure-white rounded-xl p-6 w-full max-w-sm" (click)="$event.stopPropagation()">
+    <h3 class="text-lg font-semibold mb-4">Agregar producto</h3>
+    <p class="text-sm text-medium-gray mb-4">
+      ¿Agregar "<strong>{{ newProductName() }}</strong>"?
+    </p>
+    <div class="flex gap-3 mt-6">
+      <button (click)="closeModals()"
+        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-100 text-base font-medium text-medium-gray active:scale-95 transition-transform">
+        <span aria-hidden="true">✕</span> Cancelar
+      </button>
+      <button (click)="addProduct()"
+        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-900 text-pure-white text-base font-medium active:scale-95 transition-transform">
+        <span aria-hidden="true">＋</span> Agregar
+      </button>
+    </div>
+  </div>
+</div>
+}
+
+@if (showUpdateModal() && selectedProduct()) {
+<div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" (click)="closeModals()">
+  <div class="bg-pure-white rounded-xl p-6 w-full max-w-sm" (click)="$event.stopPropagation()">
+    <h3 class="text-md font-semibold mb-2">{{ selectedProduct()!.name }}</h3>
+    @if (selectedProduct()!.lastPurchase) {
+    <p class="text-xs text-medium-gray mb-2">
+      <span class="font-bold">Última compra:</span> {{ formatDate(selectedProduct()!.lastPurchase!.date) }} ({{
+      getTimeSince(selectedProduct()!.lastPurchase!.date) }})
+    </p>
+    <p class="text-xs text-medium-gray mb-2"><span class="font-bold"> {{ selectedProduct()!.lastPurchase!.store }} - {{
+        formatCurrency(selectedProduct()!.lastPurchase!.price) }}</span></p>
+    }
+
+    <div class="space-y-4">
+      <div class="flex items-center justify-between">
+        <span class="text-base">¿Hay en casa?</span>
+        <button (click)="updateInStock.set(!updateInStock())" class="w-12 h-7 rounded-full transition-colors relative"
+          [class]="updateInStock() ? 'bg-green-500' : 'bg-gray-300'">
+          <span class="absolute top-1 w-5 h-5 bg-white rounded-full transition-transform"
+            [class]="updateInStock() ? 'left-6' : 'left-1'">
+          </span>
+        </button>
+      </div>
+
+      @if (updateInStock()) {
+      <div>
+        <label class="text-sm text-medium-gray">Cantidad</label>
+        <div class="flex gap-2 mt-1">
+          <input type="number" [(ngModel)]="updateQuantity" min="0"
+            class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base bg-white" />
+          <select [(ngModel)]="updateUnidad"
+            class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base bg-white">
+            @for (u of unidades; track u) {
+            <option [value]="u">{{ u }}</option>
+            }
+          </select>
+        </div>
+      </div>
+      }
+
+      <div class="flex items-center justify-between">
+        <span class="text-base">¿Comprar?</span>
+        <button (click)="updateToBuy.set(!updateToBuy())" class="w-12 h-7 rounded-full transition-colors relative"
+          [class]="updateToBuy() ? 'bg-gray-700' : 'bg-gray-300'">
+          <span class="absolute top-1 w-5 h-5 bg-white rounded-full transition-transform"
+            [class]="updateToBuy() ? 'left-6' : 'left-1'">
+          </span>
+        </button>
+      </div>
+
+      @if (updateToBuy()) {
+      <div class="mt-4">
+        <label class="text-sm text-medium-gray">¿Cuánto comprar?</label>
+        <div class="flex gap-2 mt-1">
+          <input type="number" [(ngModel)]="updateBuyQuantity" min="1"
+            class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base" />
+          <select [(ngModel)]="updateBuyUnidad"
+            class="w-1/2 px-3 py-2 border border-border-silver rounded-lg text-base bg-white">
+            @for (u of unidades; track u) {
+            <option [value]="u">{{ u }}</option>
+            }
+          </select>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="flex gap-3 mt-6">
+      <button (click)="closeModals()"
+        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-100 text-base font-medium text-medium-gray active:scale-95 transition-transform">
+        <span aria-hidden="true">✕</span> Cancelar
+      </button>
+      <button (click)="updateProduct()"
+        class="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-gray-900 text-pure-white text-base font-medium active:scale-95 transition-transform">
+        <span aria-hidden="true">✓</span> Guardar
+      </button>
+    </div>
+  </div>
+</div>
+}
