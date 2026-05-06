@@ -1,5 +1,5 @@
 {
-	"outputDirectory": "dist/invenntory-front/browser",
+	"outputDirectory": "dist/invenntory-front",
 	"routes": [
 		{
 			"src": "/(.*)",
